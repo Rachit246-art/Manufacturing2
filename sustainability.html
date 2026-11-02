@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainability — Circular Metallurgy &amp; Net-Zero 2030 | FORGEX</title>
+  <meta name="description" content="Discover how FORGEX is decarbonizing precision manufacturing with 100% closed-loop alloy scrap reclamation, 12.8MW solar microgrids, and closed-loop coolant distillation.">
+  
+  <!-- Google Fonts: Space Grotesk, Inter, IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+  <div class="technical-grid-overlay" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-status-bar">
+    <div class="container-fluid top-status-inner">
+      <div class="status-left">
+        <span class="status-indicator"><span class="indicator-ping"></span><span class="indicator-core"></span></span>
+        <span class="status-text"><strong class="mono-text">SOLAR MICROGRID TELEMETRY</strong> — 12.8 MW CURRENT GENERATION // 100% CLEAN RUN</span>
+      </div>
+      <div class="status-center">
+        <span class="iso-badge"><i data-lucide="leaf"></i> ISO 14001:2015 CERTIFIED</span>
+      </div>
+      <div class="status-right">
+        <span class="mono-coords"><i data-lucide="battery-charging"></i> 40 MWH BATTERY BUFFER ONLINE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="mainHeader">
+    <nav class="navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="FORGEX Homepage">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <rect width="36" height="36" rx="8" fill="#202827" />
+            <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+            <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">FORGEX</span>
+          <span class="logo-tagline">ENGINEERING BEYOND LIMITS.</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+        <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+        <li class="nav-item"><a href="sustainability.html" class="nav-link active">Sustainability</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-quote" id="openQuoteModalBtn" aria-label="Request a Quote">
+          <span>Request a Quote</span>
+          <div class="btn-arrow-circle"><i data-lucide="arrow-right" class="icon-arrow"></i></div>
+        </button>
+        <button type="button" class="btn-menu-circle" id="mobileMenuToggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="logo-title">FORGEX</div>
+      <button class="drawer-close-btn" id="closeDrawerBtn" aria-label="Close Navigation Menu"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home</a></li>
+      <li><a href="about.html" class="drawer-link">About</a></li>
+      <li><a href="capabilities.html" class="drawer-link">Capabilities</a></li>
+      <li><a href="industries.html" class="drawer-link">Industries</a></li>
+      <li><a href="sustainability.html" class="drawer-link active">Sustainability</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <button type="button" class="btn-quote w-full" id="drawerQuoteBtn">
+        <span>Request a Quote</span>
+        <div class="btn-arrow-circle"><i data-lucide="arrow-right"></i></div>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       INNER HERO: SUSTAINABILITY
+       ========================================================================== -->
+  <section class="inner-hero-section">
+    <div class="inner-hero-split">
+      <div class="inner-hero-content">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-accent-dot"></span>
+          <span class="eyebrow-text">CIRCULAR METALLURGY &amp; ESG</span>
+          <span class="eyebrow-slash">/</span>
+          <span class="eyebrow-est">NET-ZERO 2030</span>
+        </div>
+        <h1 class="inner-hero-title">
+          Decarbonizing Heavy <span class="text-lime-gradient">Precision Metallurgy.</span>
+        </h1>
+        <p class="inner-hero-lead">
+          Achieving aerospace-grade micron tolerances without ecological compromises. Explore our 100% closed-loop scrap recycling, on-site solar microgrids, and vacuum fluid distillation.
+        </p>
+        <div class="inner-hero-stats mono-text">
+          <div class="ih-stat">
+            <strong>-45%</strong>
+            <span>Carbon Intensity</span>
+          </div>
+          <div class="ih-divider"></div>
+          <div class="ih-stat">
+            <strong>100%</strong>
+            <span>Alloy Scrap Reclaimed</span>
+          </div>
+          <div class="ih-divider"></div>
+          <div class="ih-stat">
+            <strong>12.8 MW</strong>
+            <span>Solar Generation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-hero-visual">
+        <div class="inner-visual-container">
+          <img src="assets/images/coils_strips.jpg" alt="Closed Loop Metal Metallurgy" class="inner-hero-img">
+          <div class="inner-visual-overlay"></div>
+          <div class="inner-visual-badge mono-text">
+            <span class="pulse-beacon"></span>
+            <span>ECO-METRIC // ZERO TOXIC DISCHARGE VERIFIED</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1: THE FOUR PILLARS OF CIRCULAR METALLURGY
+       ========================================================================== -->
+  <section class="eco-pillars-section">
+    <div class="section-container">
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 01. CIRCULAR PILLARS</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            Engineering a Closed-Loop <span class="text-lime-gradient">Resource Cycle.</span>
+          </h2>
+          <p class="section-lead">
+            Every byproduct of our multi-axis CNC milling, cutting, and welding processes is captured, cleaned, and recycled back into high-purity production stock.
+          </p>
+        </div>
+      </div>
+
+      <div class="eco-pillars-grid">
+        
+        <div class="eco-pillar-card reveal-on-scroll" data-delay="100">
+          <div class="eco-card-top mono-text">
+            <span class="eco-num">01</span>
+            <span class="eco-badge">100% CLOSED-LOOP CHIP RECLAIM</span>
+          </div>
+          <h3 class="eco-title">Optical Alloy Sorting &amp; Remelt</h3>
+          <p class="eco-body">
+            CNC swarf and metal turnings are automatically sorted by spectrometer and briquetted under vacuum to prevent oxidation. 100% remelted into certified billet stock without degradation.
+          </p>
+          <div class="eco-metric-strip mono-text">
+            <span>SAVED: 4,800 TONS/YR VIRGIN ORE</span>
+          </div>
+        </div>
+
+        <div class="eco-pillar-card reveal-on-scroll" data-delay="200">
+          <div class="eco-card-top mono-text">
+            <span class="eco-num">02</span>
+            <span class="eco-badge">12.8 MW RENEWABLE MICROGRID</span>
+          </div>
+          <h3 class="eco-title">Rooftop Solar &amp; Thermal Storage</h3>
+          <p class="eco-body">
+            Our Munich and Detroit facilities feature vast rooftop bifacial solar arrays connected to 40 MWh liquid-cooled battery banks, supplying 82% of all annual machine spindle power directly.
+          </p>
+          <div class="eco-metric-strip mono-text">
+            <span>CLEAN ENERGY: 16.5 GWH / YEAR</span>
+          </div>
+        </div>
+
+        <div class="eco-pillar-card reveal-on-scroll" data-delay="300">
+          <div class="eco-card-top mono-text">
+            <span class="eco-num">03</span>
+            <span class="eco-badge">VACUUM CENTRIFUGE RECOVERY</span>
+          </div>
+          <h3 class="eco-title">99.4% Coolant &amp; Oil Recirculation</h3>
+          <p class="eco-body">
+            High-speed centrifugal separators and vacuum distillation extract all cutting lubricants from chips. Bio-lubricants are filtered to 1 micron and pumped back into machine sumps.
+          </p>
+          <div class="eco-metric-strip mono-text">
+            <span>ZERO HAZARDOUS WASTE DISPOSAL</span>
+          </div>
+        </div>
+
+        <div class="eco-pillar-card reveal-on-scroll" data-delay="400">
+          <div class="eco-card-top mono-text">
+            <span class="eco-num">04</span>
+            <span class="eco-badge">CIRCULAR PACKAGING</span>
+          </div>
+          <h3 class="eco-title">Anodized Returnable Transit Vaults</h3>
+          <p class="eco-body">
+            Components are transported in reusable CNC-machined aluminum transit cases with RFID moisture and shock sensors, eliminating single-use wood crates and plastic bubble film.
+          </p>
+          <div class="eco-metric-strip mono-text">
+            <span>100% CIRCULAR LOGISTICS FLEET</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: INTERACTIVE CARBON EMISSIONS SAVINGS CALCULATOR
+       ========================================================================== -->
+  <section class="carbon-calculator-section">
+    <div class="section-container">
+      <div class="calc-box-glass reveal-on-scroll">
+        <div class="calc-header text-center">
+          <div class="header-tag-pill mono-text mx-auto">
+            <span class="pill-dot"></span>
+            <span>// 02. ESG IMPACT CALCULATOR</span>
+          </div>
+          <h2 class="section-headline">
+            Simulate Your Component <span class="text-lime-gradient">Decarbonization Impact.</span>
+          </h2>
+          <p class="section-lead mx-auto">
+            Adjust your annual component procurement volume to calculate net metric tons of carbon emissions avoided through Forgex circular metallurgy.
+          </p>
+        </div>
+
+        <div class="calc-interactive-container">
+          <div class="slider-control-row">
+            <div class="slider-label-group mono-text">
+              <span>ANNUAL SOURCED COMPONENT VOLUME:</span>
+              <strong class="slider-val-display" id="volumeDisplay">250 METRIC TONS / YR</strong>
+            </div>
+            <input type="range" id="volumeSlider" min="25" max="2000" step="25" value="250" class="impact-range" oninput="updateImpactCalc(this.value)">
+            <div class="slider-ticks mono-text">
+              <span>25 TONS</span>
+              <span>500 TONS</span>
+              <span>1,000 TONS</span>
+              <span>2,000 TONS</span>
+            </div>
+          </div>
+
+          <!-- Calculated Impact Metrics Grid -->
+          <div class="calc-results-grid mono-text">
+            <div class="impact-result-card">
+              <span class="res-lbl">NET CO2 AVOIDED</span>
+              <strong class="res-num lime-text" id="calcCo2">1,875 TONS</strong>
+              <span class="res-sub">vs. primary bauxite smelting</span>
+            </div>
+            <div class="impact-result-card">
+              <span class="res-lbl">CLEAN KWH UTILIZED</span>
+              <strong class="res-num" id="calcKwh">3,250,000 KWH</strong>
+              <span class="res-sub">from on-site solar microgrid</span>
+            </div>
+            <div class="impact-result-card">
+              <span class="res-lbl">WATER SAVED</span>
+              <strong class="res-num lime-text" id="calcWater">9.4 MILLION L</strong>
+              <span class="res-sub">via closed-loop distillation</span>
+            </div>
+            <div class="impact-result-card">
+              <span class="res-lbl">TREE EQUIVALENT</span>
+              <strong class="res-num" id="calcTrees">85,200 TREES</strong>
+              <span class="res-sub">annual carbon sequestration</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA & Footer -->
+  <section class="engineering-cta-section">
+    <div class="cta-backdrop-image" style="background-image: url('assets/images/footer_cta_bg.jpg');"></div>
+    <div class="cta-scrim-overlay"></div>
+    <div class="section-container relative-z">
+      <div class="cta-content-box reveal-on-scroll">
+        <h2 class="cta-main-title">Build a Greener Supply Chain with <span class="text-lime-gradient">FORGEX.</span></h2>
+        <p class="cta-subtitle">Receive full Scope 3 emissions certificates and metallurgical LCA documentation for every production batch.</p>
+        <div class="cta-button-cluster">
+          <a href="contact.html" class="btn-quote btn-quote-large">
+            <span>Request Sustainable Sourcing Dossier</span>
+            <div class="btn-arrow-circle"><i data-lucide="arrow-right"></i></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="forgex-footer">
+    <div class="section-container">
+      <div class="footer-top-grid">
+        <div class="footer-col-brand">
+          <div class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                <rect width="36" height="36" rx="8" fill="#202827" />
+                <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+                <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-title text-white">FORGEX</span>
+              <span class="logo-tagline text-steel">ENGINEERING BEYOND LIMITS.</span>
+            </div>
+          </div>
+          <p class="footer-brand-p">Advanced industrial manufacturing, robotic workcells, and micron-level precision metallurgy for global aerospace, defense, and e-mobility leaders.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">NAVIGATION</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About FORGEX</a></li>
+            <li><a href="capabilities.html">Advanced Capabilities</a></li>
+            <li><a href="industries.html">Industries Served</a></li>
+            <li><a href="sustainability.html">Circular Metallurgy</a></li>
+            <li><a href="contact.html">Contact Engineering</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">CAPABILITIES</h4>
+          <ul class="footer-links">
+            <li><a href="capabilities.html">5-Axis CNC Milling</a></li>
+            <li><a href="capabilities.html">Fiber Laser Profiling</a></li>
+            <li><a href="capabilities.html">Robotic Welding</a></li>
+            <li><a href="capabilities.html">Zeiss CMM Metrology</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">HEADQUARTERS</h4>
+          <address class="footer-address mono-text">
+            FORGEX INDUSTRIAL HOLDINGS AG<br>
+            Technologiepark 18<br>
+            80339 Munich, Germany<br>
+            TEL: +49 (0) 89 2441 8000
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom-bar mono-text">
+        <div class="bottom-left"><span>&copy; 2026 FORGEX INDUSTRIAL HOLDINGS AG. ALL RIGHTS RESERVED.</span></div>
+        <div class="bottom-right"><span class="live-status-pill"><i class="dot-green"></i> SYSTEM STATUS: 100% OPERATIONAL</span></div>
+      </div>
+      <div class="footer-credit-bar">
+        <span>FORGEX | Made with <span class="credit-heart">&hearts;</span> by FORGEX</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

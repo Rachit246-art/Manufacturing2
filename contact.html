@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Engineering RFQ — 24-Hour Feasibility | FORGEX</title>
+  <meta name="description" content="Initiate a direct engineering RFQ with the master toolpath planners and metallurgists at FORGEX. 24-hour turnaround on CAD feasibility analysis under full NDA.">
+  
+  <!-- Google Fonts: Space Grotesk, Inter, IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+  <div class="technical-grid-overlay" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-status-bar">
+    <div class="container-fluid top-status-inner">
+      <div class="status-left">
+        <span class="status-indicator"><span class="indicator-ping"></span><span class="indicator-core"></span></span>
+        <span class="status-text"><strong class="mono-text">ENGINEERING DESK</strong> — RAPID RESPONSE ACTIVE // 24-HOUR TURNAROUND</span>
+      </div>
+      <div class="status-center">
+        <span class="iso-badge"><i data-lucide="lock"></i> 100% MUTUAL NDA CONFIDENTIALITY</span>
+      </div>
+      <div class="status-right">
+        <span class="mono-coords"><i data-lucide="headphones"></i> DIRECT LINE: +49 (0) 89 2441 8000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="mainHeader">
+    <nav class="navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="FORGEX Homepage">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <rect width="36" height="36" rx="8" fill="#202827" />
+            <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+            <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">FORGEX</span>
+          <span class="logo-tagline">ENGINEERING BEYOND LIMITS.</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+        <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+        <li class="nav-item"><a href="sustainability.html" class="nav-link">Sustainability</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-quote" id="openQuoteModalBtn" aria-label="Request a Quote">
+          <span>Request a Quote</span>
+          <div class="btn-arrow-circle"><i data-lucide="arrow-right" class="icon-arrow"></i></div>
+        </button>
+        <button type="button" class="btn-menu-circle" id="mobileMenuToggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="logo-title">FORGEX</div>
+      <button class="drawer-close-btn" id="closeDrawerBtn" aria-label="Close Navigation Menu"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home</a></li>
+      <li><a href="about.html" class="drawer-link">About</a></li>
+      <li><a href="capabilities.html" class="drawer-link">Capabilities</a></li>
+      <li><a href="industries.html" class="drawer-link">Industries</a></li>
+      <li><a href="sustainability.html" class="drawer-link">Sustainability</a></li>
+      <li><a href="contact.html" class="drawer-link active">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <button type="button" class="btn-quote w-full" id="drawerQuoteBtn">
+        <span>Request a Quote</span>
+        <div class="btn-arrow-circle"><i data-lucide="arrow-right"></i></div>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       INNER HERO: CONTACT
+       ========================================================================== -->
+  <section class="inner-hero-section">
+    <div class="inner-hero-split">
+      <div class="inner-hero-content">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-accent-dot"></span>
+          <span class="eyebrow-text">ENGINEERING INQUIRY &amp; CONSULTATION</span>
+          <span class="eyebrow-slash">/</span>
+          <span class="eyebrow-est">24-HOUR SLA</span>
+        </div>
+        <h1 class="inner-hero-title">
+          Initiate Your Technical <span class="text-lime-gradient">Specification.</span>
+        </h1>
+        <p class="inner-hero-lead">
+          Connect directly with our chief manufacturing engineers. Receive rapid CAD collision analysis, metallurgical recommendations, and transparent pricing under complete mutual NDA.
+        </p>
+        <div class="inner-hero-stats mono-text">
+          <div class="ih-stat">
+            <strong>&lt; 24 HRS</strong>
+            <span>Technical Quotation</span>
+          </div>
+          <div class="ih-divider"></div>
+          <div class="ih-stat">
+            <strong>100% NDA</strong>
+            <span>Secure Encryption</span>
+          </div>
+          <div class="ih-divider"></div>
+          <div class="ih-stat">
+            <strong>4 HUBS</strong>
+            <span>Global Coverage</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-hero-visual">
+        <div class="inner-visual-container">
+          <img src="assets/images/footer_cta_bg.jpg" alt="Forgex Engineering Consultation Desk" class="inner-hero-img">
+          <div class="inner-visual-overlay"></div>
+          <div class="inner-visual-badge mono-text">
+            <span class="pulse-beacon"></span>
+            <span>SECURE GATEWAY FX-ENCRYPTED // LIVE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1: INTERACTIVE RFQ FORM & CAD UPLOAD
+       ========================================================================== -->
+  <section class="rfq-form-section">
+    <div class="section-container">
+      <div class="rfq-wrapper-glass reveal-on-scroll">
+        <div class="rfq-header-box">
+          <div class="header-tag-pill mono-text">
+            <span class="pill-dot"></span>
+            <span>// RAPID RFQ CONFIGURATOR</span>
+          </div>
+          <h2 class="section-headline">
+            Submit Your Component <span class="text-lime-gradient">Model for Review.</span>
+          </h2>
+          <p class="section-lead">
+            Fill in the parameters below. Our engineering team will review your solid geometry, confirm machine workcell availability, and reply with a complete quotation within one business day.
+          </p>
+        </div>
+
+        <form class="main-rfq-form" id="mainRfqForm" onsubmit="event.preventDefault(); handlePageQuoteSubmit();">
+          
+          <div class="form-grid-columns">
+            
+            <!-- Column 1: Client & Company Information -->
+            <div class="rfq-col">
+              <h3 class="col-title mono-text">01. CONTACT CREDENTIALS</h3>
+              
+              <div class="form-group">
+                <label for="rfqName">Full Name &amp; Title *</label>
+                <input type="text" id="rfqName" placeholder="Dr. Johannes Richter, Lead Propulsion Eng." required>
+              </div>
+
+              <div class="form-group">
+                <label for="rfqEmail">Corporate Email *</label>
+                <input type="email" id="rfqEmail" placeholder="j.richter@aerospace-oem.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="rfqCompany">Company / Organization *</label>
+                <input type="text" id="rfqCompany" placeholder="European Propulsion Systems GmbH" required>
+              </div>
+
+              <div class="form-group">
+                <label for="rfqPhone">Direct Telephone / Mobile</label>
+                <input type="tel" id="rfqPhone" placeholder="+49 89 1234 5678">
+              </div>
+            </div>
+
+            <!-- Column 2: Technical Project Parameters -->
+            <div class="rfq-col">
+              <h3 class="col-title mono-text">02. TECHNICAL PARAMETERS</h3>
+              
+              <div class="form-group">
+                <label for="rfqSector">Target Industry / Application</label>
+                <select id="rfqSector">
+                  <option value="aero">Aerospace Propulsion &amp; Airframe</option>
+                  <option value="ev">Electric Vehicle Powertrain</option>
+                  <option value="energy">Subsea Oil &amp; Gas / Offshore Wind</option>
+                  <option value="semicon">Semiconductor Vacuum Blocks</option>
+                  <option value="pharma">Sanitary Biopharma &amp; Medical</option>
+                  <option value="other">Custom Industrial Prototype</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="rfqMaterial">Alloy Class / Material Specification</label>
+                <input type="text" id="rfqMaterial" placeholder="e.g. Titanium Ti-6Al-4V / Inconel 718" required>
+              </div>
+
+              <div class="form-row-compact">
+                <div class="form-group">
+                  <label for="rfqTol">Critical Tolerance</label>
+                  <input type="text" id="rfqTol" placeholder="±0.005 mm">
+                </div>
+                <div class="form-group">
+                  <label for="rfqVolume">Annual Batch Volume</label>
+                  <input type="text" id="rfqVolume" placeholder="e.g. 5,000 units/yr">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="rfqNotes">Design Notes / Specific Standards</label>
+                <textarea id="rfqNotes" rows="3" placeholder="Specify surface roughness requirements, cryogenic treatment needs, or FAI documentation requirements..."></textarea>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive CAD File Dropzone -->
+          <div class="cad-upload-area" id="cadDropzone">
+            <input type="file" id="cadFileInput" class="file-hidden-input" accept=".step,.stp,.iges,.igs,.dxf,.dwg,.sldprt,.prt,.par,.zip" onchange="handleFileSelect(event)">
+            <div class="dropzone-inner" onclick="document.getElementById('cadFileInput').click();">
+              <div class="dropzone-icon-box">
+                <i data-lucide="upload-cloud"></i>
+              </div>
+              <h4 class="dropzone-title">Upload 3D CAD Solid Models &amp; 2D Drawings</h4>
+              <p class="dropzone-sub">Drag &amp; drop files here or <span class="browse-link">browse files</span></p>
+              <div class="dropzone-formats mono-text">
+                <span>ACCEPTED: STEP (.stp, .step), IGES (.igs), Parasolid (.x_t), DXF, DWG, SLDPRT, ZIP (MAX 250 MB)</span>
+              </div>
+              <div class="upload-feedback mono-text" id="uploadFeedback"></div>
+            </div>
+          </div>
+
+          <div class="rfq-submit-row">
+            <button type="submit" class="btn-quote btn-quote-large">
+              <span>Transmit Engineering Dossier</span>
+              <div class="btn-arrow-circle"><i data-lucide="send"></i></div>
+            </button>
+            <div class="rfq-guarantee-pill mono-text">
+              <i data-lucide="lock" class="lime-text"></i>
+              <span>256-BIT ENCRYPTED // MUTUAL NDA APPLIES AUTOMATICALLY</span>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: GLOBAL HUBS DIRECTORY WITH LIVE LOCAL TIMES
+       ========================================================================== -->
+  <section class="hubs-live-section">
+    <div class="section-container">
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 02. GLOBAL ENGINEERING DIRECTORY</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            Reach Our Production Centers <span class="text-lime-gradient">Directly.</span>
+          </h2>
+          <p class="section-lead">
+            With 4 operational manufacturing hubs across North America, Europe, and Asia-Pacific. Connect with your regional technical desk.
+          </p>
+        </div>
+      </div>
+
+      <div class="hubs-contact-grid">
+        
+        <!-- Munich HQ -->
+        <div class="hub-contact-card reveal-on-scroll" data-delay="100">
+          <div class="hub-c-top">
+            <div class="city-name">MUNICH (HQ)</div>
+            <span class="clock-display mono-text" id="clockMunich">09:42 CET</span>
+          </div>
+          <div class="hub-c-role mono-text">CENTRAL R&amp;D // 5-AXIS AEROSPACE HUB</div>
+          <address class="hub-c-addr mono-text">
+            FORGEX INDUSTRIAL HOLDINGS AG<br>
+            Technologiepark 18, 80339 Munich, Germany<br>
+            TEL: +49 (0) 89 2441 8000<br>
+            EMAIL: munich@forgex-manufacturing.com
+          </address>
+          <div class="hub-c-status mono-text">
+            <span class="status-dot-lime"></span>
+            <span>DAY SHIFT ONLINE // CAPACITY: ACTIVE</span>
+          </div>
+        </div>
+
+        <!-- Detroit -->
+        <div class="hub-contact-card reveal-on-scroll" data-delay="200">
+          <div class="hub-c-top">
+            <div class="city-name">DETROIT</div>
+            <span class="clock-display mono-text" id="clockDetroit">03:42 EST</span>
+          </div>
+          <div class="hub-c-role mono-text">AUTOMOTIVE // HIGH-THROUGHPUT EV CELLS</div>
+          <address class="hub-c-addr mono-text">
+            FORGEX NORTH AMERICA INC.<br>
+            4200 Industrial Parkway, Auburn Hills, MI 48326, USA<br>
+            TEL: +1 (248) 555-8820<br>
+            EMAIL: detroit@forgex-manufacturing.com
+          </address>
+          <div class="hub-c-status mono-text">
+            <span class="status-dot-lime"></span>
+            <span>NIGHT SHIFT ONLINE // LIGHTS-OUT CELL RUN</span>
+          </div>
+        </div>
+
+        <!-- Tokyo -->
+        <div class="hub-contact-card reveal-on-scroll" data-delay="300">
+          <div class="hub-c-top">
+            <div class="city-name">TOKYO</div>
+            <span class="clock-display mono-text" id="clockTokyo">17:42 JST</span>
+          </div>
+          <div class="hub-c-role mono-text">METROLOGY // ULTRA-HIGH PURITY CLEANROOM</div>
+          <address class="hub-c-addr mono-text">
+            FORGEX JAPAN KK<br>
+            Shinagawa Tech Center, Minato-ku, Tokyo 108-0075, Japan<br>
+            TEL: +81 3 5400 9100<br>
+            EMAIL: tokyo@forgex-manufacturing.com
+          </address>
+          <div class="hub-c-status mono-text">
+            <span class="status-dot-lime"></span>
+            <span>SWING SHIFT ONLINE // CMM CALIBRATION ACTIVE</span>
+          </div>
+        </div>
+
+        <!-- Singapore -->
+        <div class="hub-contact-card reveal-on-scroll" data-delay="400">
+          <div class="hub-c-top">
+            <div class="city-name">SINGAPORE</div>
+            <span class="clock-display mono-text" id="clockSingapore">16:42 SGT</span>
+          </div>
+          <div class="hub-c-role mono-text">APAC LOGISTICS // SUBSEA OFFSHORE VALVES</div>
+          <address class="hub-c-addr mono-text">
+            FORGEX ASIA PACIFIC PTE. LTD.<br>
+            Tuas Industrial Bay 4, Singapore 637401<br>
+            TEL: +65 6820 4400<br>
+            EMAIL: singapore@forgex-manufacturing.com
+          </address>
+          <div class="hub-c-status mono-text">
+            <span class="status-dot-lime"></span>
+            <span>DAY SHIFT ONLINE // FREIGHT DISPATCH ACTIVE</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: TECHNICAL FAQ ACCORDION
+       ========================================================================== -->
+  <section class="faq-section">
+    <div class="section-container">
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 03. ENGINEERING FAQ</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            Frequently Asked <span class="text-lime-gradient">Technical Questions.</span>
+          </h2>
+          <p class="section-lead">
+            Everything you need to know regarding CAD submission, NDA protocols, quality certifications, and lead times.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-accordion-container reveal-on-scroll" data-delay="100">
+        
+        <div class="faq-item" tabindex="0">
+          <div class="faq-question">
+            <h4>What CAD model formats does Forgex accept for rapid toolpath quotation?</h4>
+            <span class="faq-toggle-icon"><i data-lucide="plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We natively accept neutral 3D CAD formats including STEP (.step, .stp AP203/AP214/AP242), IGES (.igs), and Parasolid (.x_t, .x_b). We also directly ingest native Siemens NX, CATIA V5/V6, PTC Creo, and SolidWorks files. For geometric dimensioning &amp; tolerancing (GD&amp;T), please attach PDF engineering drawings highlighting critical datums.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" tabindex="0">
+          <div class="faq-question">
+            <h4>How does Forgex execute mutual Non-Disclosure Agreements (NDAs)?</h4>
+            <span class="faq-toggle-icon"><i data-lucide="plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We prioritize confidentiality. Submitting a request through our portal automatically initiates our bilateral mutual NDA under German and Delaware law. Alternatively, you can email your corporate standard NDA to legal@forgex-manufacturing.com for 4-hour legal review and digital counter-signature.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" tabindex="0">
+          <div class="faq-question">
+            <h4>What is the expected turnaround time for First Article Inspection (FAI) prototypes?</h4>
+            <span class="faq-toggle-icon"><i data-lucide="plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              For rapid prototype aerospace and automotive components, our Fast-Track workcells output verified First Article Inspection (AS9102 FAI) batches in 7 to 10 business days, complete with coordinate measuring machine (CMM) dimensional reports and full material test certificates.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" tabindex="0">
+          <div class="faq-question">
+            <h4>What mill test certificates and metallurgical inspection data are supplied?</h4>
+            <span class="faq-toggle-icon"><i data-lucide="plus"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Every shipment is accompanied by EN 10204 3.1 inspection certification proving melt origin, chemical spectrometry, tensile yield strength, elongation, and Charpy impact values. Non-destructive testing (ultrasonic, eddy current, liquid penetrant) is performed in-house by Level II/III certified technicians.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="forgex-footer">
+    <div class="section-container">
+      <div class="footer-top-grid">
+        <div class="footer-col-brand">
+          <div class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                <rect width="36" height="36" rx="8" fill="#202827" />
+                <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+                <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-title text-white">FORGEX</span>
+              <span class="logo-tagline text-steel">ENGINEERING BEYOND LIMITS.</span>
+            </div>
+          </div>
+          <p class="footer-brand-p">Advanced industrial manufacturing, robotic workcells, and micron-level precision metallurgy for global aerospace, defense, and e-mobility leaders.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">NAVIGATION</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About FORGEX</a></li>
+            <li><a href="capabilities.html">Advanced Capabilities</a></li>
+            <li><a href="industries.html">Industries Served</a></li>
+            <li><a href="sustainability.html">Circular Metallurgy</a></li>
+            <li><a href="contact.html">Contact Engineering</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">CAPABILITIES</h4>
+          <ul class="footer-links">
+            <li><a href="capabilities.html">5-Axis CNC Milling</a></li>
+            <li><a href="capabilities.html">Fiber Laser Profiling</a></li>
+            <li><a href="capabilities.html">Robotic Welding</a></li>
+            <li><a href="capabilities.html">Zeiss CMM Metrology</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">HEADQUARTERS</h4>
+          <address class="footer-address mono-text">
+            FORGEX INDUSTRIAL HOLDINGS AG<br>
+            Technologiepark 18<br>
+            80339 Munich, Germany<br>
+            TEL: +49 (0) 89 2441 8000
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom-bar mono-text">
+        <div class="bottom-left"><span>&copy; 2026 FORGEX INDUSTRIAL HOLDINGS AG. ALL RIGHTS RESERVED.</span></div>
+        <div class="bottom-right"><span class="live-status-pill"><i class="dot-green"></i> SYSTEM STATUS: 100% OPERATIONAL</span></div>
+      </div>
+      <div class="footer-credit-bar">
+        <span>FORGEX | Made with <span class="credit-heart">&hearts;</span> by FORGEX</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

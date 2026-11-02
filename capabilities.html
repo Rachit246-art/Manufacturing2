@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capabilities — High-Precision 5-Axis CNC &amp; Robotic Workcells | FORGEX</title>
+  <meta name="description" content="Explore the advanced manufacturing infrastructure of FORGEX: 5-axis CNC machining, 30kW fiber lasers, coordinated robotic welding cells, and Zeiss CMM metrology.">
+  
+  <!-- Google Fonts: Space Grotesk, Inter, IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+  <div class="technical-grid-overlay" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-status-bar">
+    <div class="container-fluid top-status-inner">
+      <div class="status-left">
+        <span class="status-indicator"><span class="indicator-ping"></span><span class="indicator-core"></span></span>
+        <span class="status-text"><strong class="mono-text">FORGEX INFRASTRUCTURE</strong> — 144 AUTOMATED MACHINING CENTERS ONLINE</span>
+      </div>
+      <div class="status-center">
+        <span class="iso-badge"><i data-lucide="shield-check"></i> AS9100D &amp; ISO 9001:2015</span>
+      </div>
+      <div class="status-right">
+        <span class="mono-coords"><i data-lucide="map-pin"></i> 180,000 M² TOTAL GLOBAL CAPACITY</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="mainHeader">
+    <nav class="navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="FORGEX Homepage">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <rect width="36" height="36" rx="8" fill="#202827" />
+            <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+            <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">FORGEX</span>
+          <span class="logo-tagline">ENGINEERING BEYOND LIMITS.</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="capabilities.html" class="nav-link active">Capabilities</a></li>
+        <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+        <li class="nav-item"><a href="sustainability.html" class="nav-link">Sustainability</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-quote" id="openQuoteModalBtn" aria-label="Request a Quote">
+          <span>Request a Quote</span>
+          <div class="btn-arrow-circle"><i data-lucide="arrow-right" class="icon-arrow"></i></div>
+        </button>
+        <button type="button" class="btn-menu-circle" id="mobileMenuToggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="logo-title">FORGEX</div>
+      <button class="drawer-close-btn" id="closeDrawerBtn" aria-label="Close Navigation Menu"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home</a></li>
+      <li><a href="about.html" class="drawer-link">About</a></li>
+      <li><a href="capabilities.html" class="drawer-link active">Capabilities</a></li>
+      <li><a href="industries.html" class="drawer-link">Industries</a></li>
+      <li><a href="sustainability.html" class="drawer-link">Sustainability</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <button type="button" class="btn-quote w-full" id="drawerQuoteBtn">
+        <span>Request a Quote</span>
+        <div class="btn-arrow-circle"><i data-lucide="arrow-right"></i></div>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       INNER HERO: CAPABILITIES
+       ========================================================================== -->
+  <section class="inner-hero-section">
+    <div class="inner-hero-split">
+      <div class="inner-hero-content">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-accent-dot"></span>
+          <span class="eyebrow-text">INFRASTRUCTURE &amp; WORKCELLS</span>
+          <span class="eyebrow-slash">/</span>
+          <span class="eyebrow-est">REV 2026</span>
+        </div>
+        <h1 class="inner-hero-title">
+          Extreme Precision. <span class="text-lime-gradient">Industrial Velocity.</span>
+        </h1>
+        <p class="inner-hero-lead">
+          Equipped with continuous 5-axis milling centers, 30,000-watt fiber laser cutters, synchronized multi-robot welding gantries, and cleanroom metrology labs.
+        </p>
+        <div class="inner-hero-stats mono-text">
+          <div class="ih-stat">
+            <strong>144+</strong>
+            <span>Active CNC Spindles</span>
+          </div>
+          <div class="ih-divider"></div>
+          <div class="ih-stat">
+            <strong>±0.001 MM</strong>
+            <span>CMM Verification</span>
+          </div>
+          <div class="ih-divider"></div>
+          <div class="ih-stat">
+            <strong>30 KW</strong>
+            <span>Fiber Laser Power</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-hero-visual">
+        <div class="inner-visual-container">
+          <img src="assets/images/laser_cutting.jpg" alt="High speed industrial laser profiling" class="inner-hero-img">
+          <div class="inner-visual-overlay"></div>
+          <div class="inner-visual-badge mono-text">
+            <span class="pulse-beacon"></span>
+            <span>CELL L-04 // OPTICAL INTERFEROMETER ACTIVE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1: MACHINE FLEET SHOWCASE
+       ========================================================================== -->
+  <section class="machine-fleet-section">
+    <div class="section-container">
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 01. MACHINE ARCHITECTURE</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            High-Performance <span class="text-lime-gradient">Production Workcells.</span>
+          </h2>
+          <p class="section-lead">
+            Every cell is digitally tied into our real-time factory MES, offering continuous toolpath telemetry, dynamic thermal compensation, and automated pallet changing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Fleet Grid -->
+      <div class="fleet-cards-grid">
+        
+        <!-- Machine 1 -->
+        <div class="fleet-card reveal-on-scroll" data-delay="100">
+          <div class="fleet-img-wrap">
+            <img src="assets/images/sheets_plates.jpg" alt="5-Axis Machining Center" class="fleet-img">
+            <div class="fleet-cat-badge mono-text">5-AXIS CNC MILLING</div>
+          </div>
+          <div class="fleet-card-body">
+            <h3 class="fleet-title">Hermle C 62 U MT Dynamic</h3>
+            <p class="fleet-desc">Simultaneous 5-axis milling and turning center engineered for heavy aerospace structural nodes and complex impeller geometry.</p>
+            <div class="fleet-specs mono-text">
+              <div class="f-spec"><span>ENVELOPE:</span> <strong>1,200 x 1,300 x 900 mm</strong></div>
+              <div class="f-spec"><span>SPINDLE:</span> <strong class="lime-text">24,000 RPM Liquid-Cooled</strong></div>
+              <div class="f-spec"><span>REPEATABILITY:</span> <strong>±0.003 mm</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine 2 -->
+        <div class="fleet-card reveal-on-scroll" data-delay="200">
+          <div class="fleet-img-wrap">
+            <img src="assets/images/laser_cutting.jpg" alt="Fiber Laser Center" class="fleet-img">
+            <div class="fleet-cat-badge mono-text">30KW FIBER LASER</div>
+          </div>
+          <div class="fleet-card-body">
+            <h3 class="fleet-title">Trumpf TruLaser 8030 High-Density</h3>
+            <p class="fleet-desc">High-power solid-state fiber laser profiling with nitrogen assist. Produces burr-free cuts on titanium and Inconel up to 50mm.</p>
+            <div class="fleet-specs mono-text">
+              <div class="f-spec"><span>BED SIZE:</span> <strong>6,000 x 2,500 mm Dual Bed</strong></div>
+              <div class="f-spec"><span>LASER POWER:</span> <strong class="lime-text">30,000 Watts Ultra-Density</strong></div>
+              <div class="f-spec"><span>EDGE STANDARD:</span> <strong>ISO 9013 Class 1</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine 3 -->
+        <div class="fleet-card reveal-on-scroll" data-delay="300">
+          <div class="fleet-img-wrap">
+            <img src="assets/images/hero_factory.jpg" alt="Robotic Welding Cell" class="fleet-img">
+            <div class="fleet-cat-badge mono-text">ROBOTIC WELDING GENTRY</div>
+          </div>
+          <div class="fleet-card-body">
+            <h3 class="fleet-title">KUKA Dual KR CYBERTECH Workcell</h3>
+            <p class="fleet-desc">Synchronized dual 6-axis robotic arc welding with dynamic optical laser seam tracking and automated consumable tip cleaners.</p>
+            <div class="fleet-specs mono-text">
+              <div class="f-spec"><span>PAYLOAD:</span> <strong>500 KG Positioner Table</strong></div>
+              <div class="f-spec"><span>SEAM TRACKER:</span> <strong class="lime-text">±0.05 mm Optical Scanner</strong></div>
+              <div class="f-spec"><span>STANDARDS:</span> <strong>ASME Section IX, AWS D1.1</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine 4 -->
+        <div class="fleet-card reveal-on-scroll" data-delay="400">
+          <div class="fleet-img-wrap">
+            <img src="assets/images/pipes_tubes.jpg" alt="Tubular Hydroforming Center" class="fleet-img">
+            <div class="fleet-cat-badge mono-text">CNC MANDREL FORMING</div>
+          </div>
+          <div class="fleet-card-body">
+            <h3 class="fleet-title">Schwarze-Robitec Heavy Tube Bender</h3>
+            <p class="fleet-desc">Multi-stack CNC mandrel cold tube bending capable of 1.0D tight bend radii without ovality or wall thinning in hydraulic lines.</p>
+            <div class="fleet-specs mono-text">
+              <div class="f-spec"><span>TUBE OD:</span> <strong>Ø 6 mm to Ø 168.3 mm</strong></div>
+              <div class="f-spec"><span>BEND RADIUS:</span> <strong class="lime-text">1.0 x OD Tight Radius</strong></div>
+              <div class="f-spec"><span>PRESSURE TEST:</span> <strong>Hydrostatic 1,500 Bar</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine 5 -->
+        <div class="fleet-card reveal-on-scroll" data-delay="500">
+          <div class="fleet-img-wrap">
+            <img src="assets/images/precision_component_hero.jpg" alt="Zeiss CMM Metrology" class="fleet-img">
+            <div class="fleet-cat-badge mono-text">COORDINATE METROLOGY</div>
+          </div>
+          <div class="fleet-card-body">
+            <h3 class="fleet-title">Zeiss PRISMO Ultra Ultra-Precision</h3>
+            <p class="fleet-desc">High-speed contact scanning coordinate measuring machine housed in a class 10,000 thermal-controlled metrology laboratory.</p>
+            <div class="fleet-specs mono-text">
+              <div class="f-spec"><span>ACCURACY:</span> <strong class="lime-text">0.5 + L/500 μm</strong></div>
+              <div class="f-spec"><span>CHAMBER TEMP:</span> <strong>20.0°C ± 0.2°C Constant</strong></div>
+              <div class="f-spec"><span>STANDARDS:</span> <strong>NIST &amp; PTB Traceable</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine 6 -->
+        <div class="fleet-card reveal-on-scroll" data-delay="600">
+          <div class="fleet-img-wrap">
+            <img src="assets/images/precision_bearing_detail.jpg" alt="Cryogenic Treatment" class="fleet-img">
+            <div class="fleet-cat-badge mono-text">METALLURGY LAB</div>
+          </div>
+          <div class="fleet-card-body">
+            <h3 class="fleet-title">Deep Cryogenic Quenching Bay</h3>
+            <p class="fleet-desc">Liquid nitrogen cryogenic stabilization down to -196°C to eliminate retained austenite and ensure dimensional stability across decades.</p>
+            <div class="fleet-specs mono-text">
+              <div class="f-spec"><span>CHAMBER TEMP:</span> <strong class="lime-text">-196°C Liquid N2</strong></div>
+              <div class="f-spec"><span>SOAK DURATION:</span> <strong>24 to 72 Hours Cycle</strong></div>
+              <div class="f-spec"><span>MICROSTRUCTURE:</span> <strong>100% Martensitic Conversion</strong></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: CERTIFIED METALLURGY MATRIX
+       ========================================================================== -->
+  <section class="metallurgy-matrix-section">
+    <div class="section-container">
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 02. CERTIFIED METALLURGY</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            Aerospace Alloys &amp; <span class="text-lime-gradient">Superalloys Catalog.</span>
+          </h2>
+          <p class="section-lead">
+            Forgex maintains certified mill stock with complete 3.1 chemical &amp; mechanical inspection test certificates (MTR) for flight-critical applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="materials-table-wrapper reveal-on-scroll" data-delay="100">
+        <table class="materials-table mono-text">
+          <thead>
+            <tr>
+              <th>MATERIAL / ALLOY</th>
+              <th>UNS / SPEC</th>
+              <th>TENSILE STRENGTH</th>
+              <th>MAX OPERATING TEMP</th>
+              <th>PRIMARY AEROSPACE APPLICATION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong class="mat-name">Ti-6Al-4V (Grade 5 Titanium)</strong></td>
+              <td>UNS R56400 / AMS 4911</td>
+              <td class="lime-text">950 MPa</td>
+              <td>400°C</td>
+              <td>Turbine fan discs, airframe structural fittings</td>
+            </tr>
+            <tr>
+              <td><strong class="mat-name">Inconel 718 (Nickel Superalloy)</strong></td>
+              <td>UNS N07718 / AMS 5662</td>
+              <td class="lime-text">1,375 MPa</td>
+              <td>700°C</td>
+              <td>Rocket engine nozzles, gas turbine combustion rings</td>
+            </tr>
+            <tr>
+              <td><strong class="mat-name">Alloy 7075-T6 (Aerospace Aluminum)</strong></td>
+              <td>UNS A97075 / AMS 4045</td>
+              <td class="lime-text">570 MPa</td>
+              <td>120°C</td>
+              <td>Lightweight fuselage bulkheads, EV suspension arms</td>
+            </tr>
+            <tr>
+              <td><strong class="mat-name">Super Duplex 2507 Stainless</strong></td>
+              <td>UNS S32750 / EN 1.4410</td>
+              <td class="lime-text">800 MPa</td>
+              <td>300°C</td>
+              <td>15,000 PSI subsea Christmas tree valves, marine shafts</td>
+            </tr>
+            <tr>
+              <td><strong class="mat-name">316L Vacuum Melted Stainless</strong></td>
+              <td>UNS S31603 / ASTM A276</td>
+              <td class="lime-text">580 MPa</td>
+              <td>800°C</td>
+              <td>Sanitary bio-pharma vessels, cryogenic fuel lines</td>
+            </tr>
+            <tr>
+              <td><strong class="mat-name">Hastelloy C-276</strong></td>
+              <td>UNS N10276 / ASTM B574</td>
+              <td class="lime-text">790 MPa</td>
+              <td>1,040°C</td>
+              <td>Aggressive chemical scrubbers, nuclear processing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: INTERACTIVE TOLERANCE & ESTIMATOR WIDGET
+       ========================================================================== -->
+  <section class="estimator-section">
+    <div class="section-container">
+      <div class="estimator-card-glass reveal-on-scroll">
+        <div class="estimator-header">
+          <div class="header-tag-pill mono-text">
+            <span class="pill-dot"></span>
+            <span>// 03. SPECIFICATION ESTIMATOR</span>
+          </div>
+          <h2 class="section-headline">
+            Instant Feasibility &amp; <span class="text-lime-gradient">Tolerance Matrix.</span>
+          </h2>
+          <p class="section-lead">
+            Select your target material and machining complexity to calculate guaranteed tolerances and expected production lead time.
+          </p>
+        </div>
+
+        <div class="estimator-controls-grid">
+          <div class="control-box">
+            <label class="mono-text" for="estMaterial">SELECT ALLOY CLASS</label>
+            <select id="estMaterial" onchange="updateEstimator()">
+              <option value="ti">Titanium Ti-6Al-4V Grade 5</option>
+              <option value="inconel">Inconel 718 Nickel Superalloy</option>
+              <option value="al" selected>Aerospace Aluminum 7075-T6</option>
+              <option value="stainless">316L / Super Duplex Stainless</option>
+            </select>
+          </div>
+
+          <div class="control-box">
+            <label class="mono-text" for="estComplexity">MACHINING GEOMETRY</label>
+            <select id="estComplexity" onchange="updateEstimator()">
+              <option value="3axis">3-Axis Prismatic Milling</option>
+              <option value="5axis" selected>Simultaneous 5-Axis Sculpted</option>
+              <option value="laser">High-Density 30kW Laser Profiling</option>
+              <option value="micro">Micro-Metrology EDM &amp; CMM</option>
+            </select>
+          </div>
+
+          <div class="control-box">
+            <label class="mono-text" for="estVolume">TARGET BATCH SIZE</label>
+            <select id="estVolume" onchange="updateEstimator()">
+              <option value="proto">Rapid Prototype (1 - 50 units)</option>
+              <option value="pilot" selected>Pilot Batch (50 - 500 units)</option>
+              <option value="production">Full Production (500 - 10,000+ units/mo)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Readout Output -->
+        <div class="estimator-output-panel mono-text" id="estimatorOutput">
+          <div class="output-item">
+            <span class="out-lbl">GUARANTEED TOLERANCE:</span>
+            <strong class="out-val lime-text" id="outTol">±0.005 mm</strong>
+          </div>
+          <div class="output-item">
+            <span class="out-lbl">SURFACE ROUGHNESS:</span>
+            <strong class="out-val" id="outRa">Ra 0.1 μm</strong>
+          </div>
+          <div class="output-item">
+            <span class="out-lbl">ESTIMATED LEAD TIME:</span>
+            <strong class="out-val" id="outLead">10 - 14 Business Days</strong>
+          </div>
+          <div class="output-item">
+            <span class="out-lbl">QC INSPECTION:</span>
+            <strong class="out-val lime-text" id="outQc">100% Zeiss CMM + FAI</strong>
+          </div>
+        </div>
+
+        <div class="estimator-action-bar">
+          <button type="button" class="btn-quote" onclick="document.getElementById('openQuoteModalBtn').click();">
+            <span>Lock In Specifications for RFQ</span>
+            <div class="btn-arrow-circle"><i data-lucide="arrow-right"></i></div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA & Footer -->
+  <section class="engineering-cta-section">
+    <div class="cta-backdrop-image" style="background-image: url('assets/images/footer_cta_bg.jpg');"></div>
+    <div class="cta-scrim-overlay"></div>
+    <div class="section-container relative-z">
+      <div class="cta-content-box reveal-on-scroll">
+        <h2 class="cta-main-title">Ready to Test Your CAD Against <span class="text-lime-gradient">FORGEX</span> Limits?</h2>
+        <p class="cta-subtitle">Upload your STEP or IGES solid models for rapid toolpath collision and cycle time analysis within 24 hours.</p>
+        <div class="cta-button-cluster">
+          <a href="contact.html" class="btn-quote btn-quote-large">
+            <span>Submit Engineering Drawings</span>
+            <div class="btn-arrow-circle"><i data-lucide="arrow-right"></i></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="forgex-footer">
+    <div class="section-container">
+      <div class="footer-top-grid">
+        <div class="footer-col-brand">
+          <div class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                <rect width="36" height="36" rx="8" fill="#202827" />
+                <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+                <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-title text-white">FORGEX</span>
+              <span class="logo-tagline text-steel">ENGINEERING BEYOND LIMITS.</span>
+            </div>
+          </div>
+          <p class="footer-brand-p">Advanced industrial manufacturing, robotic workcells, and micron-level precision metallurgy for global aerospace, defense, and e-mobility leaders.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">NAVIGATION</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About FORGEX</a></li>
+            <li><a href="capabilities.html">Advanced Capabilities</a></li>
+            <li><a href="industries.html">Industries Served</a></li>
+            <li><a href="sustainability.html">Circular Metallurgy</a></li>
+            <li><a href="contact.html">Contact Engineering</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">CAPABILITIES</h4>
+          <ul class="footer-links">
+            <li><a href="capabilities.html">5-Axis CNC Milling</a></li>
+            <li><a href="capabilities.html">Fiber Laser Profiling</a></li>
+            <li><a href="capabilities.html">Robotic Welding</a></li>
+            <li><a href="capabilities.html">Zeiss CMM Metrology</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">HEADQUARTERS</h4>
+          <address class="footer-address mono-text">
+            FORGEX INDUSTRIAL HOLDINGS AG<br>
+            Technologiepark 18<br>
+            80339 Munich, Germany<br>
+            TEL: +49 (0) 89 2441 8000
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom-bar mono-text">
+        <div class="bottom-left"><span>&copy; 2026 FORGEX INDUSTRIAL HOLDINGS AG. ALL RIGHTS RESERVED.</span></div>
+        <div class="bottom-right"><span class="live-status-pill"><i class="dot-green"></i> SYSTEM STATUS: 100% OPERATIONAL</span></div>
+      </div>
+      <div class="footer-credit-bar">
+        <span>FORGEX | Made with <span class="credit-heart">&hearts;</span> by FORGEX</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

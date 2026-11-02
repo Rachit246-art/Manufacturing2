@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About FORGEX — Engineering Heritage &amp; Leadership | Precision Manufacturing</title>
+  <meta name="description" content="Discover the history, leadership, and engineering philosophy behind FORGEX. Over 25 years of micron-precision manufacturing breakthroughs.">
+  
+  <!-- Google Fonts: Space Grotesk, Inter, IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+  <!-- Subtle Industrial Grid Background Pattern -->
+  <div class="technical-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Interactive Cursor Follower Glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Top Announcement / System Ticker Bar -->
+  <div class="top-status-bar">
+    <div class="container-fluid top-status-inner">
+      <div class="status-left">
+        <span class="status-indicator">
+          <span class="indicator-ping"></span>
+          <span class="indicator-core"></span>
+        </span>
+        <span class="status-text"><strong class="mono-text">FORGEX GLOBAL OPERATIONS</strong> — ALL ADVANCED AUTOMATION CELLS ONLINE</span>
+      </div>
+      <div class="status-center">
+        <span class="iso-badge"><i data-lucide="shield-check"></i> ISO 9001:2015 &amp; AS9100D CERTIFIED</span>
+      </div>
+      <div class="status-right">
+        <span class="mono-coords"><i data-lucide="map-pin"></i> 48.1351° N, 11.5820° E // MUNICH - TOKYO - DETROIT</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar-wrapper" id="mainHeader">
+    <nav class="navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="FORGEX Homepage">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <rect width="36" height="36" rx="8" fill="#202827" />
+            <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+            <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">FORGEX</span>
+          <span class="logo-tagline">ENGINEERING BEYOND LIMITS.</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+        <li class="nav-item"><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+        <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+        <li class="nav-item"><a href="sustainability.html" class="nav-link">Sustainability</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-quote" id="openQuoteModalBtn" aria-label="Request a Quote">
+          <span>Request a Quote</span>
+          <div class="btn-arrow-circle">
+            <i data-lucide="arrow-right" class="icon-arrow"></i>
+          </div>
+        </button>
+
+        <button type="button" class="btn-menu-circle" id="mobileMenuToggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="logo-title">FORGEX</div>
+      <button class="drawer-close-btn" id="closeDrawerBtn" aria-label="Close Navigation Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home</a></li>
+      <li><a href="about.html" class="drawer-link active">About</a></li>
+      <li><a href="capabilities.html" class="drawer-link">Capabilities</a></li>
+      <li><a href="industries.html" class="drawer-link">Industries</a></li>
+      <li><a href="sustainability.html" class="drawer-link">Sustainability</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <button type="button" class="btn-quote w-full" id="drawerQuoteBtn">
+        <span>Request a Quote</span>
+        <div class="btn-arrow-circle">
+          <i data-lucide="arrow-right"></i>
+        </div>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       INNER PAGE HERO: ABOUT FORGEX
+       ========================================================================== -->
+  <section class="inner-hero-section">
+    <div class="inner-hero-split">
+      <div class="inner-hero-content">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-accent-dot"></span>
+          <span class="eyebrow-text">OUR HERITAGE &amp; MISSION</span>
+          <span class="eyebrow-slash">/</span>
+          <span class="eyebrow-est">EST. 1998</span>
+        </div>
+        <h1 class="inner-hero-title">
+          Engineering the <span class="text-lime-gradient">Uncompromising Standard.</span>
+        </h1>
+        <p class="inner-hero-lead">
+          From a precision tooling atelier founded in Bavaria in 1998 to a global advanced manufacturing power supplying flight-critical aerospace systems and autonomous vehicle architectures.
+        </p>
+        <div class="inner-hero-stats mono-text">
+          <div class="ih-stat">
+            <strong>25+ YEARS</strong>
+            <span>Continuous Innovation</span>
+          </div>
+          <div class="ih-divider"></div>
+          <div class="ih-stat">
+            <strong>180,000 M²</strong>
+            <span>Global Floor Capacity</span>
+          </div>
+          <div class="ih-divider"></div>
+          <div class="ih-stat">
+            <strong>±0.003 MM</strong>
+            <span>Verified Accuracy</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Asymmetric Visual Cutaway -->
+      <div class="inner-hero-visual">
+        <div class="inner-visual-container">
+          <img src="assets/images/ind_automotive.jpg" alt="Automated Forgex Manufacturing Line" class="inner-hero-img">
+          <div class="inner-visual-overlay"></div>
+          <div class="inner-visual-badge mono-text">
+            <span class="pulse-beacon"></span>
+            <span>MUNICH ADVANCED RESEARCH FACILITY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1: THE FORGEX TIMELINE & MILESTONES (1998 - 2026)
+       ========================================================================== -->
+  <section class="timeline-section-unique">
+    <div class="section-container">
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 01. MILESTONE EVOLUTION</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            A Quarter Century of <span class="text-lime-gradient">Breakthrough Engineering.</span>
+          </h2>
+          <p class="section-lead">
+            Explore the technological milestones that shaped Forgex from a precision aerospace subcontractor into an international smart-manufacturing benchmark.
+          </p>
+        </div>
+      </div>
+
+      <!-- Interactive Timeline Controller -->
+      <div class="timeline-nav-row reveal-on-scroll" data-delay="100">
+        <button class="t-era-btn active" data-era="1998">
+          <span class="t-year mono-text">1998</span>
+          <span class="t-title">Inception &amp; CNC Tooling</span>
+        </button>
+        <button class="t-era-btn" data-era="2006">
+          <span class="t-year mono-text">2006</span>
+          <span class="t-title">5-Axis Aerospace Hub</span>
+        </button>
+        <button class="t-era-btn" data-era="2014">
+          <span class="t-year mono-text">2014</span>
+          <span class="t-title">AS9100D Certification</span>
+        </button>
+        <button class="t-era-btn" data-era="2020">
+          <span class="t-year mono-text">2020</span>
+          <span class="t-title">Autonomous Robotics</span>
+        </button>
+        <button class="t-era-btn" data-era="2026">
+          <span class="t-year mono-text">2026</span>
+          <span class="t-title">Net-Zero Metallurgy</span>
+        </button>
+      </div>
+
+      <!-- Timeline Content Cards Container -->
+      <div class="timeline-display-card reveal-on-scroll" data-delay="200" id="timelineDisplay">
+        <div class="t-card-grid">
+          <div class="t-card-info">
+            <span class="t-era-badge mono-text" id="tEraBadge">ERA 1998 // THE FOUNDING</span>
+            <h3 class="t-card-heading" id="tHeading">Precision Tooling Atelier in Munich</h3>
+            <p class="t-card-body" id="tBody">
+              Founded by master toolmaker Heinrich Vance and a team of aerospace machinists. Forgex initially delivered micro-machined tooling dies for high-performance German automotive racing and prototype gas turbines.
+            </p>
+            <div class="t-card-metrics mono-text" id="tMetrics">
+              <div class="t-metric"><span class="lbl">FOUNDING TEAM:</span> <span class="val">12 Master Machinists</span></div>
+              <div class="t-metric"><span class="lbl">INITIAL ENVELOPE:</span> <span class="val">500 x 300 mm CNC</span></div>
+              <div class="t-metric"><span class="lbl">KEY CLIENTS:</span> <span class="val">European Aerospace &amp; Formula 1</span></div>
+            </div>
+          </div>
+          <div class="t-card-image-box">
+            <img src="assets/images/sheets_plates.jpg" alt="Forgex Milestone" class="t-card-img" id="tImg">
+            <div class="t-card-overlay"></div>
+            <div class="t-card-hud mono-text">ARCHIVE RECORD FX-1998-01</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: EXECUTIVE LEADERSHIP
+       ========================================================================== -->
+  <section class="leadership-section">
+    <div class="section-container">
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 02. EXECUTIVE BOARD</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            Guided by Master Engineers &amp; <span class="text-lime-gradient">Visionaries.</span>
+          </h2>
+          <p class="section-lead">
+            Our leadership team blends decades of hands-on metallurgical research, aerospace manufacturing leadership, and robotics software architecture.
+          </p>
+        </div>
+      </div>
+
+      <div class="leadership-grid">
+        <div class="leader-card reveal-on-scroll" data-delay="100">
+          <div class="leader-avatar-box">
+            <img src="assets/images/hero_factory.jpg" alt="Executive Leadership" class="leader-img">
+            <div class="leader-badge mono-text">FOUNDER &amp; CEO</div>
+          </div>
+          <div class="leader-info">
+            <h3 class="leader-name">Dr. Alexander Vance</h3>
+            <span class="leader-role mono-text">CHIEF EXECUTIVE OFFICER // PHD AEROSPACE</span>
+            <p class="leader-bio">
+              Former head of turbine blade manufacturing at MTU Aero Engines. 28 years driving micron precision standards and automated workcell design across North America and Europe.
+            </p>
+          </div>
+        </div>
+
+        <div class="leader-card reveal-on-scroll" data-delay="200">
+          <div class="leader-avatar-box">
+            <img src="assets/images/precision_bearing_detail.jpg" alt="Executive Leadership" class="leader-img">
+            <div class="leader-badge mono-text">CHIEF METALLURGIST</div>
+          </div>
+          <div class="leader-info">
+            <h3 class="leader-name">Dr. Elena Rostova</h3>
+            <span class="leader-role mono-text">VP OF METALLURGY // PHD MATERIALS SCIENCE</span>
+            <p class="leader-bio">
+              Pioneered proprietary cryogenic grain stabilization protocols for titanium superalloys. Holds 14 patents in closed-loop alloy reclamation and high-temperature metallurgy.
+            </p>
+          </div>
+        </div>
+
+        <div class="leader-card reveal-on-scroll" data-delay="300">
+          <div class="leader-avatar-box">
+            <img src="assets/images/laser_cutting.jpg" alt="Executive Leadership" class="leader-img">
+            <div class="leader-badge mono-text">VP ROBOTICS</div>
+          </div>
+          <div class="leader-info">
+            <h3 class="leader-name">Marcus Chen</h3>
+            <span class="leader-role mono-text">HEAD OF AUTOMATION // M.SC ROBOTICS</span>
+            <p class="leader-bio">
+              Architect of the Forgex Lights-Out AI toolpath engine. Previously managed automated powertrain robotic cells for tier-1 German automotive manufacturers.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: CERTIFICATIONS & STANDARDS
+       ========================================================================== -->
+  <section class="certifications-section">
+    <div class="section-container">
+      <div class="cert-box-glass reveal-on-scroll">
+        <div class="section-header-row text-center mb-4">
+          <div class="header-tag-pill mono-text mx-auto">
+            <span class="pill-dot"></span>
+            <span>// 03. COMPLIANCE STANDARDS</span>
+          </div>
+          <h2 class="section-headline">
+            Certified for <span class="text-lime-gradient">Critical Aerospace &amp; Defense.</span>
+          </h2>
+          <p class="section-lead mx-auto">
+            Our quality management protocols are audited by TÜV SÜD and certified under the most stringent international manufacturing regimes.
+          </p>
+        </div>
+
+        <div class="certs-matrix">
+          <div class="cert-item mono-text">
+            <div class="cert-icon"><i data-lucide="shield-check"></i></div>
+            <strong>AS9100D</strong>
+            <span>AEROSPACE &amp; DEFENSE QUALITY</span>
+          </div>
+          <div class="cert-item mono-text">
+            <div class="cert-icon"><i data-lucide="award"></i></div>
+            <strong>ISO 9001:2015</strong>
+            <span>TOTAL QUALITY MANAGEMENT</span>
+          </div>
+          <div class="cert-item mono-text">
+            <div class="cert-icon"><i data-lucide="car"></i></div>
+            <strong>IATF 16949</strong>
+            <span>AUTOMOTIVE OEM STANDARDS</span>
+          </div>
+          <div class="cert-item mono-text">
+            <div class="cert-icon"><i data-lucide="leaf"></i></div>
+            <strong>ISO 14001:2015</strong>
+            <span>ENVIRONMENTAL MANAGEMENT</span>
+          </div>
+          <div class="cert-item mono-text">
+            <div class="cert-icon"><i data-lucide="zap"></i></div>
+            <strong>AWS D1.1 &amp; D1.2</strong>
+            <span>STRUCTURAL WELDING CODES</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CTA & FOOTER
+       ========================================================================== -->
+  <section class="engineering-cta-section">
+    <div class="cta-backdrop-image" style="background-image: url('assets/images/footer_cta_bg.jpg');"></div>
+    <div class="cta-scrim-overlay"></div>
+    <div class="section-container relative-z">
+      <div class="cta-content-box reveal-on-scroll">
+        <div class="header-tag-pill mono-text mb-4">
+          <span class="pill-dot"></span>
+          <span>// DISCUSS YOUR SPECIFICATIONS</span>
+        </div>
+        <h2 class="cta-main-title">
+          Partner with <span class="text-lime-gradient">FORGEX</span> on Your Next Mission.
+        </h2>
+        <p class="cta-subtitle">
+          From flight-critical prototypes to multi-year high-volume production agreements. We are ready to review your technical drawings under strict NDA.
+        </p>
+        <div class="cta-button-cluster">
+          <a href="contact.html" class="btn-quote btn-quote-large">
+            <span>Contact Engineering Team</span>
+            <div class="btn-arrow-circle"><i data-lucide="arrow-right"></i></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Footer -->
+  <footer class="forgex-footer">
+    <div class="section-container">
+      <div class="footer-top-grid">
+        <div class="footer-col-brand">
+          <div class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                <rect width="36" height="36" rx="8" fill="#202827" />
+                <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+                <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-title text-white">FORGEX</span>
+              <span class="logo-tagline text-steel">ENGINEERING BEYOND LIMITS.</span>
+            </div>
+          </div>
+          <p class="footer-brand-p">
+            Advanced industrial manufacturing, robotic workcells, and micron-level precision metallurgy for global aerospace, defense, and e-mobility leaders.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">NAVIGATION</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About FORGEX</a></li>
+            <li><a href="capabilities.html">Advanced Capabilities</a></li>
+            <li><a href="industries.html">Industries Served</a></li>
+            <li><a href="sustainability.html">Circular Metallurgy</a></li>
+            <li><a href="contact.html">Contact Engineering</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">CAPABILITIES</h4>
+          <ul class="footer-links">
+            <li><a href="capabilities.html">5-Axis CNC Milling</a></li>
+            <li><a href="capabilities.html">Fiber Laser Profiling</a></li>
+            <li><a href="capabilities.html">Robotic Welding</a></li>
+            <li><a href="capabilities.html">Metrology Lab</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">HEADQUARTERS</h4>
+          <address class="footer-address mono-text">
+            FORGEX INDUSTRIAL HOLDINGS AG<br>
+            Technologiepark 18<br>
+            80339 Munich, Germany<br>
+            TEL: +49 (0) 89 2441 8000
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom-bar mono-text">
+        <div class="bottom-left">
+          <span>&copy; 2026 FORGEX INDUSTRIAL HOLDINGS AG. ALL RIGHTS RESERVED.</span>
+        </div>
+        <div class="bottom-right">
+          <span class="live-status-pill"><i class="dot-green"></i> SYSTEM STATUS: 100% OPERATIONAL</span>
+        </div>
+      </div>
+      <div class="footer-credit-bar">
+        <span>FORGEX | Made with <span class="credit-heart">&hearts;</span> by FORGEX</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

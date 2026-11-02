@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries Served — Aerospace, EV, Energy &amp; Semiconductor | FORGEX</title>
+  <meta name="description" content="Discover mission-critical industrial manufacturing solutions for aerospace, autonomous mobility, offshore energy, semiconductor, and sanitary bio-pharma OEMs.">
+  
+  <!-- Google Fonts: Space Grotesk, Inter, IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+  <div class="technical-grid-overlay" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-status-bar">
+    <div class="container-fluid top-status-inner">
+      <div class="status-left">
+        <span class="status-indicator"><span class="indicator-ping"></span><span class="indicator-core"></span></span>
+        <span class="status-text"><strong class="mono-text">GLOBAL CERTIFICATIONS</strong> — AS9100D (AERO) // IATF 16949 (AUTO) ACTIVE</span>
+      </div>
+      <div class="status-center">
+        <span class="iso-badge"><i data-lucide="shield-check"></i> ZERO DEFECT AUDIT 2026 PASSED</span>
+      </div>
+      <div class="status-right">
+        <span class="mono-coords"><i data-lucide="map-pin"></i> 18 COUNTRIES DIRECTLY SERVED</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="mainHeader">
+    <nav class="navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="FORGEX Homepage">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <rect width="36" height="36" rx="8" fill="#202827" />
+            <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+            <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">FORGEX</span>
+          <span class="logo-tagline">ENGINEERING BEYOND LIMITS.</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="capabilities.html" class="nav-link">Capabilities</a></li>
+        <li class="nav-item"><a href="industries.html" class="nav-link active">Industries</a></li>
+        <li class="nav-item"><a href="sustainability.html" class="nav-link">Sustainability</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-quote" id="openQuoteModalBtn" aria-label="Request a Quote">
+          <span>Request a Quote</span>
+          <div class="btn-arrow-circle"><i data-lucide="arrow-right" class="icon-arrow"></i></div>
+        </button>
+        <button type="button" class="btn-menu-circle" id="mobileMenuToggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="logo-title">FORGEX</div>
+      <button class="drawer-close-btn" id="closeDrawerBtn" aria-label="Close Navigation Menu"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home</a></li>
+      <li><a href="about.html" class="drawer-link">About</a></li>
+      <li><a href="capabilities.html" class="drawer-link">Capabilities</a></li>
+      <li><a href="industries.html" class="drawer-link active">Industries</a></li>
+      <li><a href="sustainability.html" class="drawer-link">Sustainability</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <button type="button" class="btn-quote w-full" id="drawerQuoteBtn">
+        <span>Request a Quote</span>
+        <div class="btn-arrow-circle"><i data-lucide="arrow-right"></i></div>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       INNER HERO: INDUSTRIES
+       ========================================================================== -->
+  <section class="inner-hero-section">
+    <div class="inner-hero-split">
+      <div class="inner-hero-content">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-accent-dot"></span>
+          <span class="eyebrow-text">STRATEGIC OEM SECTORS</span>
+          <span class="eyebrow-slash">/</span>
+          <span class="eyebrow-est">GLOBAL DEPLOYMENT</span>
+        </div>
+        <h1 class="inner-hero-title">
+          Engineered Where Failure is <span class="text-lime-gradient">Never an Option.</span>
+        </h1>
+        <p class="inner-hero-lead">
+          From supersonic aerospace airframes to high-rpm electric drivetrains and subsea energy conduits operating at 15,000 PSI. Discover our precision manufacturing applications.
+        </p>
+        <div class="inner-hero-stats mono-text">
+          <div class="ih-stat">
+            <strong>6 SECTORS</strong>
+            <span>Mission-Critical</span>
+          </div>
+          <div class="ih-divider"></div>
+          <div class="ih-stat">
+            <strong>500+</strong>
+            <span>OEM Programs Delivered</span>
+          </div>
+          <div class="ih-divider"></div>
+          <div class="ih-stat">
+            <strong>100%</strong>
+            <span>Traceable Metallurgy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-hero-visual">
+        <div class="inner-visual-container">
+          <img src="assets/images/ind_oilgas.jpg" alt="Subsea and Energy Precision Engineering" class="inner-hero-img">
+          <div class="inner-visual-overlay"></div>
+          <div class="inner-visual-badge mono-text">
+            <span class="pulse-beacon"></span>
+            <span>OFFSHORE ENERGY &amp; AEROSPACE READY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1: DETAILED SECTOR SHOWCASE
+       ========================================================================== -->
+  <section class="sectors-detail-section">
+    <div class="section-container">
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 01. SECTOR APPLICATIONS</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            Certified Solutions for <span class="text-lime-gradient">Leading Global Tier-1s.</span>
+          </h2>
+          <p class="section-lead">
+            Review detailed technical specifications, alloy selections, and testing certifications across our key industrial sectors.
+          </p>
+        </div>
+      </div>
+
+      <div class="sectors-vertical-list">
+        
+        <!-- Sector 1: Aerospace & Defense -->
+        <article class="sector-showcase-row reveal-on-scroll" data-delay="100">
+          <div class="sector-media-col">
+            <img src="assets/images/precision_component_hero.jpg" alt="Aerospace Rotor Hub" class="sector-img">
+            <div class="sector-hud-overlay mono-text">AS9100D // ENVELOPE: 1200MM</div>
+          </div>
+          <div class="sector-info-col">
+            <span class="sector-tag mono-text"><i data-lucide="plane"></i> AEROSPACE &amp; DEFENSE</span>
+            <h3 class="sector-title">Propulsion Systems &amp; Flight-Critical Airframe Nodes</h3>
+            <p class="sector-desc">
+              Precision 5-axis sculptured machining of titanium gas turbine rotor discs, hydraulic flight actuator manifolds, and lightweight satellite structural brackets.
+            </p>
+            <div class="sector-spec-pills mono-text">
+              <span>ALLOYS: Ti-6Al-4V, Inconel 718, 7075-T6</span>
+              <span class="lime-pill">TOLERANCE: ±0.003 MM</span>
+              <span>TESTING: 100% CMM + Ultrasonic NDT</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sector 2: Electric Mobility -->
+        <article class="sector-showcase-row reverse reveal-on-scroll" data-delay="200">
+          <div class="sector-media-col">
+            <img src="assets/images/ind_automotive.jpg" alt="Electric Vehicle Powertrain Assembly" class="sector-img">
+            <div class="sector-hud-overlay mono-text">IATF 16949 // CAPACITY: 10K/MO</div>
+          </div>
+          <div class="sector-info-col">
+            <span class="sector-tag mono-text"><i data-lucide="car"></i> ELECTRIC MOBILITY &amp; AUTOMOTIVE</span>
+            <h3 class="sector-title">High-RPM Rotor Shafts &amp; Battery Thermal Enclosures</h3>
+            <p class="sector-desc">
+              High-throughput automated production cells outputting 10,000+ precision electric vehicle drivetrain shafts monthly, induction hardened with sub-micron dynamic balance.
+            </p>
+            <div class="sector-spec-pills mono-text">
+              <span>ALLOYS: Forged 4340 Steel, 6061-T6 Al</span>
+              <span class="lime-pill">DYNAMIC BALANCE: G1.0 Grade</span>
+              <span>INSPECTION: Eddy Current &amp; Optical</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sector 3: Energy & Offshore -->
+        <article class="sector-showcase-row reveal-on-scroll" data-delay="300">
+          <div class="sector-media-col">
+            <img src="assets/images/ind_oilgas.jpg" alt="Deepsea Wellhead Valves" class="sector-img">
+            <div class="sector-hud-overlay mono-text">API 6A // PRESSURE: 15,000 PSI</div>
+          </div>
+          <div class="sector-info-col">
+            <span class="sector-tag mono-text"><i data-lucide="zap"></i> RENEWABLE ENERGY &amp; DEEPSEA OFFSHORE</span>
+            <h3 class="sector-title">Subsea Wellhead Valves &amp; Wind Pitch Rings</h3>
+            <p class="sector-desc">
+              Heavy-duty forged Super Duplex stainless steel valve blocks and multi-megawatt wind turbine pitch bearing races engineered for severe saltwater sour gas environments.
+            </p>
+            <div class="sector-spec-pills mono-text">
+              <span>ALLOYS: Super Duplex 2507, Inconel 625 Clad</span>
+              <span class="lime-pill">CORROSION: NACE MR0175 Compliant</span>
+              <span>PRESSURE: Hydrostatic 1,500 Bar</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sector 4: Semiconductor & Cleanroom -->
+        <article class="sector-showcase-row reverse reveal-on-scroll" data-delay="400">
+          <div class="sector-media-col">
+            <img src="assets/images/ind_chemical.jpg" alt="Semiconductor Vacuum Chamber" class="sector-img">
+            <div class="sector-hud-overlay mono-text">SEMI-SPEC // Ra 0.05μm</div>
+          </div>
+          <div class="sector-info-col">
+            <span class="sector-tag mono-text"><i data-lucide="flask-conical"></i> SEMICONDUCTOR &amp; CHEMICAL</span>
+            <h3 class="sector-title">Ultra-High Purity Gas Delivery Blocks &amp; Manifolds</h3>
+            <p class="sector-desc">
+              Electropolished internal chambers manufactured in cleanrooms with zero crevice defects for corrosive wafer etching gases and ultra-high vacuum handling.
+            </p>
+            <div class="sector-spec-pills mono-text">
+              <span>ALLOYS: 316L VIM-VAR, Hastelloy C-276</span>
+              <span class="lime-pill">FINISH: Ra 0.05 μm Mirror</span>
+              <span>LEAK CHECK: Helium Mass Spectrometry</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: OEM CASE STUDIES
+       ========================================================================== -->
+  <section class="case-studies-section">
+    <div class="section-container">
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 02. PROVEN CASE STUDIES</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            Quantifiable Results for <span class="text-lime-gradient">Global OEM Partners.</span>
+          </h2>
+          <p class="section-lead">
+            Explore audited case studies demonstrating cost optimization, mass reduction, and zero-failure field deployment.
+          </p>
+        </div>
+      </div>
+
+      <div class="case-studies-grid">
+        
+        <div class="case-card reveal-on-scroll" data-delay="100">
+          <div class="case-header mono-text">
+            <span class="case-client">EUROPEAN DEFENSE CONTRACTOR</span>
+            <span class="case-year">2025</span>
+          </div>
+          <h3 class="case-title">Turbine Node Structural Topology Optimization</h3>
+          <p class="case-summary">
+            Redesigned a cast steel airframe wing-attachment pivot into a consolidated 5-axis machined 7075-T6 billet structure.
+          </p>
+          <div class="case-metrics-cluster mono-text">
+            <div class="c-metric"><span class="val lime-text">-38%</span> <span class="lbl">MASS REDUCTION</span></div>
+            <div class="c-metric"><span class="val">+45%</span> <span class="lbl">FATIGUE CYCLE LIFE</span></div>
+            <div class="c-metric"><span class="val">0 PPM</span> <span class="lbl">ASSEMBLY DEFECTS</span></div>
+          </div>
+        </div>
+
+        <div class="case-card reveal-on-scroll" data-delay="200">
+          <div class="case-header mono-text">
+            <span class="case-client">TIER-1 EV POWERTRAIN OEM</span>
+            <span class="case-year">2026</span>
+          </div>
+          <h3 class="case-title">450,000 High-Speed Rotor Shaft Deliveries</h3>
+          <p class="case-summary">
+            Implemented synchronous robotic cellular manufacturing with integrated eddy-current flaw detection and laser dynamic balance.
+          </p>
+          <div class="case-metrics-cluster mono-text">
+            <div class="c-metric"><span class="val lime-text">42 SEC</span> <span class="lbl">CYCLE TIME / SHAFT</span></div>
+            <div class="c-metric"><span class="val">98.6%</span> <span class="lbl">CELL OEE RATING</span></div>
+            <div class="c-metric"><span class="val">100%</span> <span class="lbl">ON-TIME JIT DELIVERY</span></div>
+          </div>
+        </div>
+
+        <div class="case-card reveal-on-scroll" data-delay="300">
+          <div class="case-header mono-text">
+            <span class="case-client">NORTH SEA SUBSEA OPERATOR</span>
+            <span class="case-year">2024</span>
+          </div>
+          <h3 class="case-title">15,000 PSI Sour Gas Wellhead Assemblies</h3>
+          <p class="case-summary">
+            Forged and machined Super Duplex 2507 valve blocks with certified zero pitting under aggressive marine hydrogen sulfide conditions.
+          </p>
+          <div class="case-metrics-cluster mono-text">
+            <div class="c-metric"><span class="val lime-text">25 YR</span> <span class="lbl">DESIGN LIFE GUARANTEED</span></div>
+            <div class="c-metric"><span class="val">1,500 BAR</span> <span class="lbl">HYDROSTATIC PROOF</span></div>
+            <div class="c-metric"><span class="val">API 6A</span> <span class="lbl">FULL CERTIFICATION</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA & Footer -->
+  <section class="engineering-cta-section">
+    <div class="cta-backdrop-image" style="background-image: url('assets/images/footer_cta_bg.jpg');"></div>
+    <div class="cta-scrim-overlay"></div>
+    <div class="section-container relative-z">
+      <div class="cta-content-box reveal-on-scroll">
+        <h2 class="cta-main-title">Discuss Your Sector Specifications with <span class="text-lime-gradient">FORGEX.</span></h2>
+        <p class="cta-subtitle">Our specialized application engineers understand the regulatory and metallurgical demands of your sector.</p>
+        <div class="cta-button-cluster">
+          <a href="contact.html" class="btn-quote btn-quote-large">
+            <span>Consult an Industry Specialist</span>
+            <div class="btn-arrow-circle"><i data-lucide="arrow-right"></i></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="forgex-footer">
+    <div class="section-container">
+      <div class="footer-top-grid">
+        <div class="footer-col-brand">
+          <div class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                <rect width="36" height="36" rx="8" fill="#202827" />
+                <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+                <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-title text-white">FORGEX</span>
+              <span class="logo-tagline text-steel">ENGINEERING BEYOND LIMITS.</span>
+            </div>
+          </div>
+          <p class="footer-brand-p">Advanced industrial manufacturing, robotic workcells, and micron-level precision metallurgy for global aerospace, defense, and e-mobility leaders.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">NAVIGATION</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About FORGEX</a></li>
+            <li><a href="capabilities.html">Advanced Capabilities</a></li>
+            <li><a href="industries.html">Industries Served</a></li>
+            <li><a href="sustainability.html">Circular Metallurgy</a></li>
+            <li><a href="contact.html">Contact Engineering</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">CAPABILITIES</h4>
+          <ul class="footer-links">
+            <li><a href="capabilities.html">5-Axis CNC Milling</a></li>
+            <li><a href="capabilities.html">Fiber Laser Profiling</a></li>
+            <li><a href="capabilities.html">Robotic Welding</a></li>
+            <li><a href="capabilities.html">Zeiss CMM Metrology</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">HEADQUARTERS</h4>
+          <address class="footer-address mono-text">
+            FORGEX INDUSTRIAL HOLDINGS AG<br>
+            Technologiepark 18<br>
+            80339 Munich, Germany<br>
+            TEL: +49 (0) 89 2441 8000
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom-bar mono-text">
+        <div class="bottom-left"><span>&copy; 2026 FORGEX INDUSTRIAL HOLDINGS AG. ALL RIGHTS RESERVED.</span></div>
+        <div class="bottom-right"><span class="live-status-pill"><i class="dot-green"></i> SYSTEM STATUS: 100% OPERATIONAL</span></div>
+      </div>
+      <div class="footer-credit-bar">
+        <span>FORGEX | Made with <span class="credit-heart">&hearts;</span> by FORGEX</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

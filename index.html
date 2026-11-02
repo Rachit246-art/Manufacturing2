@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORGEX — Engineering Beyond Limits | Advanced Industrial Manufacturing</title>
+  <meta name="description" content="Precision manufacturing, advanced technology and industrial innovation for a stronger, more sustainable tomorrow.">
+  
+  <!-- Google Fonts: Space Grotesk, Inter, IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+  <!-- Subtle Industrial Grid Background Pattern -->
+  <div class="technical-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Interactive Cursor Follower Glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Top Announcement / System Ticker Bar -->
+  <div class="top-status-bar">
+    <div class="container-fluid top-status-inner">
+      <div class="status-left">
+        <span class="status-indicator">
+          <span class="indicator-ping"></span>
+          <span class="indicator-core"></span>
+        </span>
+        <span class="status-text"><strong class="mono-text">FORGEX GLOBAL OPERATIONS</strong> — ALL ADVANCED AUTOMATION CELLS ONLINE</span>
+      </div>
+      <div class="status-center">
+        <span class="iso-badge"><i data-lucide="shield-check"></i> ISO 9001:2015 &amp; AS9100D CERTIFIED</span>
+      </div>
+      <div class="status-right">
+        <span class="mono-coords"><i data-lucide="map-pin"></i> 48.1351° N, 11.5820° E // MUNICH - TOKYO - DETROIT</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar-wrapper" id="mainHeader">
+    <nav class="navbar-container">
+      <!-- Left: FORGEX Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="FORGEX Homepage">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <rect width="36" height="36" rx="8" fill="#202827" />
+            <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+            <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">FORGEX</span>
+          <span class="logo-tagline">ENGINEERING BEYOND LIMITS.</span>
+        </div>
+      </a>
+
+      <!-- Center Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="capabilities.html" class="nav-link">Capabilities</a>
+        </li>
+        <li class="nav-item">
+          <a href="industries.html" class="nav-link">Industries</a>
+        </li>
+        <li class="nav-item">
+          <a href="sustainability.html" class="nav-link">Sustainability</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Right Action Items -->
+      <div class="nav-actions">
+        <!-- Black Pill-shaped Request a Quote button with arrow -->
+        <button type="button" class="btn-quote" id="openQuoteModalBtn" aria-label="Request a Quote">
+          <span>Request a Quote</span>
+          <div class="btn-arrow-circle">
+            <i data-lucide="arrow-right" class="icon-arrow"></i>
+          </div>
+        </button>
+
+        <!-- Circular menu button with hamburger icon -->
+        <button type="button" class="btn-menu-circle" id="mobileMenuToggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="logo-title">FORGEX</div>
+      <button class="drawer-close-btn" id="closeDrawerBtn" aria-label="Close Navigation Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link active">Home</a></li>
+      <li><a href="about.html" class="drawer-link">About</a></li>
+      <li><a href="capabilities.html" class="drawer-link">Capabilities</a></li>
+      <li><a href="industries.html" class="drawer-link">Industries</a></li>
+      <li><a href="sustainability.html" class="drawer-link">Sustainability</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <button type="button" class="btn-quote w-full" id="drawerQuoteBtn">
+        <span>Request a Quote</span>
+        <div class="btn-arrow-circle">
+          <i data-lucide="arrow-right"></i>
+        </div>
+      </button>
+      <div class="drawer-meta mono-text">
+        <span>EST. 1998 // GLOBAL MFG</span>
+        <span>ISO 9001:2015 CERTIFIED</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION: FULL-WIDTH ASYMMETRIC SPLIT LAYOUT (EXACT VISUAL BLUEPRINT)
+       ========================================================================== -->
+  <main class="hero-section" id="home">
+    <div class="hero-split-container">
+      
+      <!-- ================= LEFT SIDE — WHITE CONTENT PANEL (approx 40%) ================= -->
+      <section class="hero-left-panel" aria-label="Forgex Overview">
+        <div class="left-panel-content">
+          
+          <!-- Eyebrow: Small uppercase badge -->
+          <div class="hero-eyebrow">
+            <span class="eyebrow-accent-dot"></span>
+            <span class="eyebrow-text">ADVANCED MANUFACTURING</span>
+            <span class="eyebrow-slash">/</span>
+            <span class="eyebrow-est">EST. 1998</span>
+          </div>
+
+          <!-- Main Heading: Exact Three-Line Composition -->
+          <h1 class="hero-main-heading">
+            <span class="headline-row row-black" data-stagger="1">
+              <span class="row-inner">Engineering</span>
+            </span>
+            <span class="headline-row row-graphite" data-stagger="2">
+              <span class="row-inner">What Comes</span>
+            </span>
+            <span class="headline-row row-lime" data-stagger="3">
+              <span class="row-inner">Next<span class="lime-dot">.</span></span>
+            </span>
+          </h1>
+
+          <!-- Description text -->
+          <p class="hero-description">
+            Precision manufacturing, advanced technology and industrial innovation for a stronger, more sustainable tomorrow.
+          </p>
+
+          <!-- Buttons Row -->
+          <div class="hero-cta-group">
+            <!-- 1. Explore Capabilities: black rounded button with arrow -->
+            <a href="#capabilities" class="btn-explore-capabilities">
+              <span>Explore Capabilities</span>
+              <span class="arrow-wrap">
+                <i data-lucide="arrow-right" class="cta-arrow"></i>
+              </span>
+            </a>
+
+            <!-- 2. Watch Our Story: minimal circular play icon with text -->
+            <button type="button" class="btn-watch-story" id="watchStoryBtn" aria-label="Watch Our Story Video">
+              <span class="play-circle-outer">
+                <span class="play-circle-inner">
+                  <i data-lucide="play" class="play-triangle"></i>
+                </span>
+                <span class="play-pulse-ring"></span>
+              </span>
+              <span class="watch-text">Watch Our Story</span>
+            </button>
+          </div>
+
+          <!-- Four compact numbered indicators -->
+          <div class="indicators-matrix" aria-label="Core Pillars">
+            <div class="indicator-badge" tabindex="0">
+              <span class="indicator-num">01</span>
+              <span class="indicator-dash">—</span>
+              <span class="indicator-label">PRECISION</span>
+            </div>
+            <div class="indicator-badge" tabindex="0">
+              <span class="indicator-num">02</span>
+              <span class="indicator-dash">—</span>
+              <span class="indicator-label">INNOVATION</span>
+            </div>
+            <div class="indicator-badge" tabindex="0">
+              <span class="indicator-num">03</span>
+              <span class="indicator-dash">—</span>
+              <span class="indicator-label">SUSTAINABILITY</span>
+            </div>
+            <div class="indicator-badge" tabindex="0">
+              <span class="indicator-num">04</span>
+              <span class="indicator-dash">—</span>
+              <span class="indicator-label">GLOBAL REACH</span>
+            </div>
+          </div>
+
+          <!-- Bottom-left component card with photograph and bold uppercase text -->
+          <div class="bottom-left-feature">
+            <div class="component-thumb-wrapper">
+              <img 
+                src="assets/images/precision_component_macro.jpg" 
+                alt="Close-up photograph of precision engineered metal component" 
+                class="component-thumb-img" 
+                loading="eager"
+              />
+              <div class="thumb-reticle" aria-hidden="true">
+                <span class="reticle-corner tl"></span>
+                <span class="reticle-corner tr"></span>
+                <span class="reticle-corner bl"></span>
+                <span class="reticle-corner br"></span>
+                <span class="reticle-crosshair">+</span>
+              </div>
+            </div>
+            <div class="bottom-feature-copy">
+              <span class="feature-tag mono-text">ISO CLASSIFIED / TOL. ±0.01MM</span>
+              <h4 class="feature-slogan">
+                <span>DRIVEN BY TECHNOLOGY.</span>
+                <span>BUILT FOR A BETTER TOMORROW.</span>
+              </h4>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Left panel background technical accents -->
+        <div class="panel-tech-ruler" aria-hidden="true">
+          <span>01</span>
+          <span class="tick"></span>
+          <span class="tick"></span>
+          <span class="tick"></span>
+          <span>02</span>
+          <span class="tick"></span>
+          <span class="tick"></span>
+          <span class="tick"></span>
+          <span>03</span>
+        </div>
+      </section>
+
+      <!-- ================= RIGHT SIDE — INDUSTRIAL IMAGE & COMPOSITIONS (approx 60%) ================= -->
+      <section class="hero-right-visual" aria-label="Industrial Manufacturing Facility">
+        
+        <!-- Large Cinematic High-Resolution Factory Photograph with Custom Diagonal Clip-path -->
+        <div class="factory-image-container" id="factoryParallaxContainer">
+          <img 
+            src="assets/images/hero_factory.jpg" 
+            alt="Advanced automotive manufacturing facility with industrial robotic arms and automated assembly lines" 
+            class="factory-hero-image" 
+            id="factoryImage"
+            loading="eager"
+          />
+          
+          <!-- Industrial Lighting & Vignette Scrim Overlay -->
+          <div class="factory-cinematic-overlay" aria-hidden="true"></div>
+
+          <!-- Interactive Dynamic Welding Sparks Canvas Overlay -->
+          <canvas id="sparksCanvas" class="sparks-canvas" aria-hidden="true"></canvas>
+
+          <!-- Factory Telemetry Crosshairs & Coordinate Markers -->
+          <div class="hud-layer" aria-hidden="true">
+            <div class="hud-marker marker-top-left mono-text">
+              <span class="hud-cross">+</span>
+              <span>CELL-A7 // ROBOTIC SPOT-WELDING MATRIX</span>
+            </div>
+            <div class="hud-marker marker-mid mono-text">
+              <span class="hud-dot"></span>
+              <span>FEED-SPEED: 420 MM/S // LASER ALIGNED</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= FLOATING TECHNICAL INFORMATION PANEL ================= -->
+        <aside class="floating-telemetry-card" id="floatingTechCard" aria-label="Live Production Telemetry">
+          <div class="telemetry-card-glass">
+            
+            <!-- Panel Header -->
+            <div class="telemetry-card-header">
+              <div class="header-indicator">
+                <span class="pulse-beacon"></span>
+                <span class="telemetry-badge mono-text">SYSTEM MONITOR // 60 FPS</span>
+              </div>
+              <h3 class="telemetry-heading">AUTOMATED PRODUCTION LINE</h3>
+            </div>
+
+            <!-- Panel Metrics List with Dividers -->
+            <div class="telemetry-metrics-grid">
+              
+              <!-- Metric 1 -->
+              <div class="metric-row">
+                <div class="metric-meta">
+                  <span class="metric-name mono-text">PRODUCTION CAPACITY</span>
+                  <span class="metric-status-dot"></span>
+                </div>
+                <div class="metric-value-wrap">
+                  <span class="metric-value">10,000+</span>
+                  <span class="metric-unit mono-text">UNITS/MONTH</span>
+                </div>
+                <div class="metric-progress-bar">
+                  <div class="progress-fill" style="width: 94%;"></div>
+                </div>
+              </div>
+
+              <!-- Metric 2 -->
+              <div class="metric-row">
+                <div class="metric-meta">
+                  <span class="metric-name mono-text">PRECISION ACCURACY</span>
+                  <span class="metric-status-dot"></span>
+                </div>
+                <div class="metric-value-wrap">
+                  <span class="metric-value">±0.01</span>
+                  <span class="metric-unit mono-text">MM</span>
+                </div>
+                <div class="metric-progress-bar">
+                  <div class="progress-fill" style="width: 99.8%;"></div>
+                </div>
+              </div>
+
+              <!-- Metric 3 -->
+              <div class="metric-row">
+                <div class="metric-meta">
+                  <span class="metric-name mono-text">OPERATIONAL EFFICIENCY</span>
+                  <span class="metric-status-dot"></span>
+                </div>
+                <div class="metric-value-wrap">
+                  <span class="metric-value highlight-lime">98.6%</span>
+                  <span class="metric-unit mono-text">OEE RATING</span>
+                </div>
+                <div class="metric-progress-bar">
+                  <div class="progress-fill" style="width: 98.6%;"></div>
+                </div>
+              </div>
+
+              <!-- Metric 4 -->
+              <div class="metric-row metric-row-status">
+                <div class="metric-meta">
+                  <span class="metric-name mono-text">REAL-TIME MONITORING</span>
+                  <span class="status-live-beacon"></span>
+                </div>
+                <div class="metric-value-wrap">
+                  <span class="metric-value status-active">ACTIVE</span>
+                  <span class="metric-unit mono-text">LATENCY 4MS</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Card Bottom Bar -->
+            <div class="telemetry-card-footer mono-text">
+              <span class="node-id">NODE #FX-8891</span>
+              <span class="signal-bars">
+                <i class="bar b1"></i>
+                <i class="bar b2"></i>
+                <i class="bar b3"></i>
+                <i class="bar b4"></i>
+              </span>
+            </div>
+
+          </div>
+        </aside>
+
+        <!-- ================= LOWER INDUSTRIAL IMAGE COMPOSITION ================= -->
+        <div class="lower-component-composition" id="lowerCompCard">
+          <div class="lower-card-inner">
+            
+            <!-- Overlapping close-up image with dramatic diagonal clip edge -->
+            <div class="precision-component-image-box">
+              <img 
+                src="assets/images/precision_component_hero.jpg" 
+                alt="Precision-engineered aerospace grade metallic component" 
+                class="precision-hero-thumb"
+                loading="eager"
+              />
+              <div class="component-gradient-veil" aria-hidden="true"></div>
+              <div class="component-diagonal-badge mono-text">
+                <i data-lucide="layers" class="badge-icon"></i>
+                <span>CNC 5-AXIS MACHINED</span>
+              </div>
+            </div>
+
+            <!-- Small Dark Technical Information Panel -->
+            <div class="precision-component-info-panel">
+              <div class="info-panel-top">
+                <span class="info-kicker mono-text">SPECIFICATION SHEET</span>
+                <h4 class="component-spec-title">PRECISION COMPONENT</h4>
+              </div>
+
+              <dl class="spec-data-list mono-text">
+                <div class="spec-data-row">
+                  <dt class="spec-key">Material:</dt>
+                  <dd class="spec-val">Aerospace Grade Aluminum</dd>
+                </div>
+                <div class="spec-data-row">
+                  <dt class="spec-key">Tolerance:</dt>
+                  <dd class="spec-val lime-val">±0.01 mm</dd>
+                </div>
+                <div class="spec-data-row">
+                  <dt class="spec-key">Application:</dt>
+                  <dd class="spec-val">High-Performance Systems</dd>
+                </div>
+              </dl>
+
+              <div class="spec-barcode" aria-hidden="true">
+                <div class="barcode-lines"></div>
+                <span class="barcode-sub mono-text">QA PASSED // CERT 2026-X7</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= RIGHT-SIDE VERTICAL ELEMENTS PANEL ================= -->
+        <div class="right-vertical-rail" aria-label="Interactive Navigation Rail">
+          <div class="vertical-rail-content">
+            
+            <!-- Small uppercase vertical text -->
+            <div class="vertical-rail-text mono-text">
+              <span>IDEAS</span>
+              <span class="v-dot">/</span>
+              <span>MATERIALS</span>
+              <span class="v-dot">/</span>
+              <span>PEOPLE</span>
+              <span class="v-dot">/</span>
+              <span>PRODUCTS</span>
+              <span class="v-dot">/</span>
+              <span class="v-lime">A BETTER TOMORROW.</span>
+            </div>
+
+            <!-- Thin vertical divider with pulsating line -->
+            <div class="rail-divider">
+              <div class="rail-tracer"></div>
+            </div>
+
+            <!-- Downward arrow with subtle bounce -->
+            <a href="#statsBar" class="rail-down-arrow" aria-label="Scroll Down">
+              <i data-lucide="arrow-down" class="down-arrow-icon"></i>
+            </a>
+
+            <!-- Virtual Tour Module -->
+            <div class="rail-tour-container" id="railTourTrigger" tabindex="0" role="button" aria-label="Take a Virtual Tour">
+              <!-- Small circular industrial image preview -->
+              <div class="tour-circular-preview">
+                <img 
+                  src="assets/images/laser_cutting.jpg" 
+                  alt="Industrial manufacturing virtual tour preview" 
+                  class="tour-thumb-img" 
+                />
+                <!-- Play button overlay -->
+                <div class="tour-play-overlay">
+                  <i data-lucide="play" class="tour-play-icon"></i>
+                </div>
+                <div class="tour-ring-sonar"></div>
+              </div>
+
+              <!-- Text: TAKE A VIRTUAL TOUR -->
+              <span class="tour-label mono-text">
+                <span class="tour-sub">360° LIVE FEED</span>
+                <span class="tour-main">TAKE A VIRTUAL TOUR</span>
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ================= BOTTOM STATISTICS BAR ================= -->
+  <section class="hero-stats-bar" id="statsBar" aria-label="Company Statistics">
+    <div class="stats-bar-container">
+      
+      <!-- Subtle Industrial Globe / Technical Mesh Texture on far left -->
+      <div class="stats-globe-texture" aria-hidden="true">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="globe-svg">
+          <circle cx="60" cy="60" r="54" stroke="#334240" stroke-width="1.2" stroke-dasharray="3 3"/>
+          <ellipse cx="60" cy="60" rx="54" ry="22" stroke="#334240" stroke-width="1.2"/>
+          <ellipse cx="60" cy="60" rx="22" ry="54" stroke="#334240" stroke-width="1.2"/>
+          <line x1="6" y1="60" x2="114" y2="60" stroke="#334240" stroke-width="1.2"/>
+          <line x1="60" y1="6" x2="60" y2="114" stroke="#334240" stroke-width="1.2"/>
+          <circle cx="60" cy="60" r="4" fill="#C5E86C"/>
+          <circle cx="82" cy="48" r="2.5" fill="#C5E86C"/>
+          <circle cx="42" cy="74" r="2.5" fill="#A9BAC0"/>
+        </svg>
+        <div class="globe-meta mono-text">
+          <span class="globe-tag">GLOBAL MFG GRID</span>
+          <span class="globe-status">STATUS // CONNECTED</span>
+        </div>
+      </div>
+
+      <!-- Stats Grid: 4 Key Figures -->
+      <div class="stats-grid">
+        
+        <!-- Stat 1 -->
+        <div class="stat-item" data-target="25">
+          <div class="stat-number-wrap">
+            <span class="stat-number counter" data-value="25">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <div class="stat-label-wrap">
+            <span class="stat-title">Years of Excellence</span>
+            <span class="stat-sub mono-text">SINCE 1998</span>
+          </div>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <!-- Stat 2 -->
+        <div class="stat-item" data-target="500">
+          <div class="stat-number-wrap">
+            <span class="stat-number counter" data-value="500">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <div class="stat-label-wrap">
+            <span class="stat-title">Projects Delivered</span>
+            <span class="stat-sub mono-text">GLOBAL AEROSPACE &amp; AUTO</span>
+          </div>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <!-- Stat 3 -->
+        <div class="stat-item" data-target="120">
+          <div class="stat-number-wrap">
+            <span class="stat-number counter" data-value="120">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <div class="stat-label-wrap">
+            <span class="stat-title">Industrial Experts</span>
+            <span class="stat-sub mono-text">PHD &amp; CNC SPECIALISTS</span>
+          </div>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <!-- Stat 4 -->
+        <div class="stat-item" data-target="18">
+          <div class="stat-number-wrap">
+            <span class="stat-number counter" data-value="18">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <div class="stat-label-wrap">
+            <span class="stat-title">Countries Served</span>
+            <span class="stat-sub mono-text">CROSS-CONTINENTAL REACH</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Extreme Right: Large Circular Lime Button with Upward-Right Arrow & Text -->
+      <div class="stats-action-wrap">
+        <a href="#about" class="btn-scroll-explore" id="scrollExploreBtn" aria-label="Scroll to Explore Next Section">
+          <span class="scroll-btn-text mono-text">SCROLL TO EXPLORE</span>
+          <div class="scroll-lime-circle">
+            <i data-lucide="arrow-up-right" class="scroll-arrow-icon"></i>
+            <span class="lime-circle-pulse"></span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1: ABOUT FORGEX & ENGINEERING PHILOSOPHY (UNIQUE ASYMMETRIC DASHBOARD)
+       ========================================================================== -->
+  <section id="about" class="about-section-unique">
+    <div class="section-container">
+      
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 01. ENGINEERING PHILOSOPHY</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            Where Micron Precision Meets <span class="text-lime-gradient">Exponential Speed.</span>
+          </h2>
+          <p class="section-lead">
+            Forgex delivers high-tolerance manufacturing solutions for industries operating where failure is not an option. From flight-critical aerospace turbines to mission-ready electric mobility drivetrains.
+          </p>
+        </div>
+      </div>
+
+      <!-- Asymmetric Dual Composition -->
+      <div class="about-grid-composition">
+        
+        <!-- Left: Technical Manifesto & Metric Indicators -->
+        <div class="about-manifesto-card reveal-on-scroll" data-delay="100">
+          <div class="card-tech-hud mono-text">
+            <span>CORE SPECIFICATION // REV 2026</span>
+            <span class="hud-status">STATUS: ONLINE</span>
+          </div>
+          <h3 class="manifesto-title">Engineered to Outperform the Elements</h3>
+          <p class="manifesto-body">
+            Our facilities merge robotic workcells, AI-optimized toolpath generation, and multi-axis metallurgical cutting. Every batch undergoes cryogenic stabilization and 100% digital coordinate inspection.
+          </p>
+          
+          <div class="pillars-checklist">
+            <div class="pillar-row">
+              <div class="pillar-icon"><i data-lucide="check-circle-2"></i></div>
+              <div class="pillar-info">
+                <h4>True Micron Tolerance (±0.005mm)</h4>
+                <p>Climate-controlled machining bays with thermal expansion compensation.</p>
+              </div>
+            </div>
+            <div class="pillar-row">
+              <div class="pillar-icon"><i data-lucide="check-circle-2"></i></div>
+              <div class="pillar-info">
+                <h4>Autonomous 24/7 Lights-Out Production</h4>
+                <p>Fully automated pallet changers, continuous laser telemetry, and robotic bin-picking.</p>
+              </div>
+            </div>
+            <div class="pillar-row">
+              <div class="pillar-icon"><i data-lucide="check-circle-2"></i></div>
+              <div class="pillar-info">
+                <h4>Closed-Loop Sustainable Metallurgy</h4>
+                <p>100% reclamation of aerospace alloys with 45% lower carbon footprint.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="manifesto-quote mono-text">
+            <blockquote>"Precision is not an objective at Forgex. It is our non-negotiable physical constant."</blockquote>
+            <span class="quote-author">— Dr. Victor Lindqvist, VP of Advanced Engineering</span>
+          </div>
+        </div>
+
+        <!-- Right: Overlapping Visual Composition with Diagonal Industrial Imagery -->
+        <div class="about-visual-cluster reveal-on-scroll" data-delay="200">
+          
+          <!-- Primary Image Card: Automotive Robotic Assembly -->
+          <div class="visual-card-primary">
+            <img 
+              src="assets/images/ind_automotive.jpg" 
+              alt="Automotive robotic workcell" 
+              class="visual-img parallax-img"
+            />
+            <div class="visual-card-overlay"></div>
+            <div class="visual-corner-badge mono-text">
+              <i data-lucide="cpu"></i>
+              <span>CELL #9 // 6-AXIS KUKA ROBOTICS</span>
+            </div>
+          </div>
+
+          <!-- Secondary Overlapping Image Card: Precision Component Detail -->
+          <div class="visual-card-secondary">
+            <img 
+              src="assets/images/precision_bearing_detail.jpg" 
+              alt="High-precision engineered component macro" 
+              class="visual-img"
+            />
+            <div class="secondary-info-bar mono-text">
+              <div class="bar-tag">SURFACE ROUGHNESS: Ra 0.08μm</div>
+              <div class="bar-spec">SPEC: AEROSPACE GRADE 7075-T6</div>
+            </div>
+          </div>
+
+          <!-- Floating Engineering Spec Badge -->
+          <div class="visual-floating-badge mono-text">
+            <div class="badge-ring"><i data-lucide="award"></i></div>
+            <div class="badge-text">
+              <strong>100% DEFECT FREE</strong>
+              <span>ZERO-DEFECT PROTOCOL // AS9100D</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: CAPABILITIES MATRIX — INTERACTIVE WORKCELL INFRASTRUCTURE
+       ========================================================================== -->
+  <section id="capabilities" class="capabilities-section-unique">
+    <div class="section-container">
+      
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 02. ADVANCED CAPABILITIES</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            State-of-the-Art <span class="text-lime-gradient">Industrial Infrastructure.</span>
+          </h2>
+          <p class="section-lead">
+            Explore our specialized manufacturing cells engineered for extreme throughput, micron repeatability, and complex geometric geometries.
+          </p>
+        </div>
+      </div>
+
+      <!-- Interactive Capabilities Tab Bar -->
+      <div class="cap-tabs-nav reveal-on-scroll">
+        <button class="cap-tab-btn active" data-tab="cnc">
+          <span class="tab-num mono-text">01</span>
+          <span class="tab-label">5-Axis CNC Machining</span>
+        </button>
+        <button class="cap-tab-btn" data-tab="laser">
+          <span class="tab-num mono-text">02</span>
+          <span class="tab-label">Fiber Laser Profiling</span>
+        </button>
+        <button class="cap-tab-btn" data-tab="welding">
+          <span class="tab-num mono-text">03</span>
+          <span class="tab-label">Automated Robotic Welding</span>
+        </button>
+        <button class="cap-tab-btn" data-tab="tubing">
+          <span class="tab-num mono-text">04</span>
+          <span class="tab-label">Precision Tubular Forming</span>
+        </button>
+      </div>
+
+      <!-- Tab Content Panels Container -->
+      <div class="cap-panels-container reveal-on-scroll" data-delay="150">
+        
+        <!-- PANEL 1: CNC Machining -->
+        <div class="cap-panel active" id="tab-cnc">
+          <div class="cap-panel-grid">
+            <div class="cap-info-col">
+              <div class="cap-badge mono-text">CELL A-1 // SIMULTANEOUS 5-AXIS</div>
+              <h3 class="cap-title">Hyper-Precision CNC Milling &amp; Turning</h3>
+              <p class="cap-desc">
+                High-speed spindle centers capable of complex single-setup machining for turbine impellers, lightweight aerospace structural nodes, and specialized titanium housings.
+              </p>
+              
+              <div class="cap-specs-table mono-text">
+                <div class="spec-row">
+                  <span class="spec-label">Working Envelope:</span>
+                  <span class="spec-val">3,200 x 2,000 x 1,400 mm</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Spindle Velocity:</span>
+                  <span class="spec-val lime-text">24,000 RPM (Liquid Cooled)</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Positional Accuracy:</span>
+                  <span class="spec-val">±0.003 mm</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Tool Magazine:</span>
+                  <span class="spec-val">180 Automatic HSK Pockets</span>
+                </div>
+              </div>
+
+              <div class="cap-actions">
+                <button type="button" class="btn-cap-action" onclick="document.getElementById('openQuoteModalBtn').click();">
+                  <span>Request Machining Specs</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="cap-visual-col">
+              <div class="cap-image-wrap">
+                <img 
+                  src="assets/images/sheets_plates.jpg" 
+                  alt="5-Axis CNC Machining of Heavy High-Precision Plates" 
+                  class="cap-img"
+                />
+                <div class="cap-img-diagonal-cut"></div>
+                <div class="cap-telemetry-tag mono-text">
+                  <span class="ping-lime"></span>
+                  <span>FEED RATE: 60M/MIN // PROBE ACTIVE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 2: Fiber Laser Profiling -->
+        <div class="cap-panel" id="tab-laser">
+          <div class="cap-panel-grid">
+            <div class="cap-info-col">
+              <div class="cap-badge mono-text">CELL L-4 // 30KW FIBER LASER</div>
+              <h3 class="cap-title">High-Speed Industrial Laser Profiling</h3>
+              <p class="cap-desc">
+                Clean-cut nitrogen assisted laser cutting providing dross-free, oxide-free edges on high-strength alloys up to 50mm thickness with zero thermal distortion.
+              </p>
+              
+              <div class="cap-specs-table mono-text">
+                <div class="spec-row">
+                  <span class="spec-label">Laser Power:</span>
+                  <span class="spec-val lime-text">30,000 Watts Ultra-Density</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Max Bed Size:</span>
+                  <span class="spec-val">6,000 x 2,500 mm Dual Shuttles</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Edge Quality:</span>
+                  <span class="spec-val">ISO 9013 Class 1 Ready</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Material Range:</span>
+                  <span class="spec-val">Inconel, Titanium, Stainless, Al</span>
+                </div>
+              </div>
+
+              <div class="cap-actions">
+                <button type="button" class="btn-cap-action" onclick="document.getElementById('openQuoteModalBtn').click();">
+                  <span>Download Laser Tolerances</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="cap-visual-col">
+              <div class="cap-image-wrap">
+                <img 
+                  src="assets/images/laser_cutting.jpg" 
+                  alt="Industrial Laser Cutting with Intense Sparks" 
+                  class="cap-img"
+                />
+                <div class="cap-img-diagonal-cut"></div>
+                <div class="cap-telemetry-tag mono-text">
+                  <span class="ping-lime"></span>
+                  <span>OPTICAL FOCAL SENSOR: ACTIVE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 3: Automated Robotic Welding -->
+        <div class="cap-panel" id="tab-welding">
+          <div class="cap-panel-grid">
+            <div class="cap-info-col">
+              <div class="cap-badge mono-text">CELL W-2 // DUAL-ARM ROBOTIC GMAW</div>
+              <h3 class="cap-title">Automated Synchronous Robotic Welding</h3>
+              <p class="cap-desc">
+                Coordinated multi-axis robotic welding cells featuring real-time seam tracking, vision guided arc calibration, and ultrasonic seam validation for critical pressure vessels.
+              </p>
+              
+              <div class="cap-specs-table mono-text">
+                <div class="spec-row">
+                  <span class="spec-label">Robot Configuration:</span>
+                  <span class="spec-val lime-text">Dual 6-Axis Synchronized KUKA</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Seam Tracking:</span>
+                  <span class="spec-val">Laser Seam Sensor (±0.05 mm)</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Weld Standards:</span>
+                  <span class="spec-val">AWS D1.1, ASME Section IX, EN 1090</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">NDT Inspection:</span>
+                  <span class="spec-val">100% Radiographic &amp; Ultrasonic</span>
+                </div>
+              </div>
+
+              <div class="cap-actions">
+                <button type="button" class="btn-cap-action" onclick="document.getElementById('openQuoteModalBtn').click();">
+                  <span>Review Welding Certifications</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="cap-visual-col">
+              <div class="cap-image-wrap">
+                <img 
+                  src="assets/images/hero_factory.jpg" 
+                  alt="Industrial robotic welding cell" 
+                  class="cap-img"
+                />
+                <div class="cap-img-diagonal-cut"></div>
+                <div class="cap-telemetry-tag mono-text">
+                  <span class="ping-lime"></span>
+                  <span>ARC TEMPERATURE: 3,400°C // NOMINAL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 4: Precision Tubular Forming -->
+        <div class="cap-panel" id="tab-tubing">
+          <div class="cap-panel-grid">
+            <div class="cap-info-col">
+              <div class="cap-badge mono-text">CELL T-8 // CNC MANDREL BENDING</div>
+              <h3 class="cap-title">Precision Tubular &amp; Profile Hydroforming</h3>
+              <p class="cap-desc">
+                High-precision multi-stack tube bending and cold draw processing for seamless hydraulic conduits, aircraft fuel lines, and complex heat exchanger tubular bundles.
+              </p>
+              
+              <div class="cap-specs-table mono-text">
+                <div class="spec-row">
+                  <span class="spec-label">Diameter Capacity:</span>
+                  <span class="spec-val">Ø 6.0 mm to Ø 168.3 mm</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Bend Radii:</span>
+                  <span class="spec-val lime-text">1.0D Tight Radius Capable</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Wall Thinning:</span>
+                  <span class="spec-val">&lt; 8% Controlled Wall Reduction</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Quality Check:</span>
+                  <span class="spec-val">Hydrostatic Testing up to 1,500 Bar</span>
+                </div>
+              </div>
+
+              <div class="cap-actions">
+                <button type="button" class="btn-cap-action" onclick="document.getElementById('openQuoteModalBtn').click();">
+                  <span>Explore Tubular Solutions</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="cap-visual-col">
+              <div class="cap-image-wrap">
+                <img 
+                  src="assets/images/pipes_tubes.jpg" 
+                  alt="High-precision engineered pipes and tubular components" 
+                  class="cap-img"
+                />
+                <div class="cap-img-diagonal-cut"></div>
+                <div class="cap-telemetry-tag mono-text">
+                  <span class="ping-lime"></span>
+                  <span>PRESSURE TEST: 1200 BAR // PASSED</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: QUALITY & METROLOGY LAB — INTERACTIVE 3D INSPECTION HOTSPOTS
+       ========================================================================== -->
+  <section id="metrology" class="metrology-section-unique">
+    <div class="section-container">
+      
+      <div class="section-header-row text-center reveal-on-scroll">
+        <div class="header-tag-pill mono-text mx-auto">
+          <span class="pill-dot"></span>
+          <span>// 03. QUALITY LAB &amp; METROLOGY</span>
+        </div>
+        <h2 class="section-headline">
+          Micron-Level Verification. <span class="text-lime-gradient">Zero Defect Integrity.</span>
+        </h2>
+        <p class="section-lead mx-auto">
+          Click any active inspection node on the component below to inspect live coordinate measuring telemetry (CMM), surface roughness, and metallurgical scan results.
+        </p>
+      </div>
+
+      <!-- Interactive Hotspot Inspection Console -->
+      <div class="inspection-console-grid reveal-on-scroll" data-delay="150">
+        
+        <!-- Left Visual Component with Pulsing Hotspots -->
+        <div class="inspection-visual-frame">
+          <img 
+            src="assets/images/precision_component_hero.jpg" 
+            alt="Aerospace precision bearing component in Metrology Chamber" 
+            class="inspection-component-img"
+            id="metrologyImg"
+          />
+          <div class="inspection-scan-line" aria-hidden="true"></div>
+          
+          <!-- HOTSPOT 1: Bearing Inner Race -->
+          <div class="hotspot-node active" style="top: 38%; left: 45%;" data-node="1" tabindex="0">
+            <span class="hotspot-pulse"></span>
+            <span class="hotspot-center">+</span>
+            <span class="hotspot-tag mono-text">01. INNER BORE</span>
+          </div>
+
+          <!-- HOTSPOT 2: Outer Flange Tolerance -->
+          <div class="hotspot-node" style="top: 24%; left: 68%;" data-node="2" tabindex="0">
+            <span class="hotspot-pulse"></span>
+            <span class="hotspot-center">+</span>
+            <span class="hotspot-tag mono-text">02. FLANGE FACE</span>
+          </div>
+
+          <!-- HOTSPOT 3: Radial Raceway Contour -->
+          <div class="hotspot-node" style="top: 65%; left: 32%;" data-node="3" tabindex="0">
+            <span class="hotspot-pulse"></span>
+            <span class="hotspot-center">+</span>
+            <span class="hotspot-tag mono-text">03. RACE CONTOUR</span>
+          </div>
+
+          <!-- HOTSPOT 4: Micro-Hardness Zone -->
+          <div class="hotspot-node" style="top: 72%; left: 62%;" data-node="4" tabindex="0">
+            <span class="hotspot-pulse"></span>
+            <span class="hotspot-center">+</span>
+            <span class="hotspot-tag mono-text">04. HARDNESS ZONE</span>
+          </div>
+
+          <div class="inspection-crosshairs" aria-hidden="true">
+            <span class="ch-tl">+</span>
+            <span class="ch-tr">+</span>
+            <span class="ch-bl">+</span>
+            <span class="ch-br">+</span>
+          </div>
+        </div>
+
+        <!-- Right: Dynamic Telemetry Inspector Card -->
+        <div class="inspection-telemetry-panel">
+          <div class="telemetry-panel-header mono-text">
+            <div class="header-status">
+              <span class="status-light live"></span>
+              <span>CMM PROBE // ZEISS PRISMO ACTIVE</span>
+            </div>
+            <span class="timestamp-display" id="inspectionTime">LIVE SCAN</span>
+          </div>
+
+          <!-- Dynamic Inspection Node Details -->
+          <div class="node-telemetry-body" id="nodeDetails">
+            <div class="node-kicker mono-text">INSPECTING NODE // #01</div>
+            <h3 class="node-title" id="nodeTitle">Inner Bore Circularity &amp; Runout</h3>
+            <p class="node-desc" id="nodeDesc">
+              Optical laser interferometer verification of the cylindrical internal bore. Thermal variance dynamically compensated at 20.0°C ISO standard environment.
+            </p>
+
+            <div class="telemetry-metric-boxes">
+              <div class="telemetry-box">
+                <span class="box-label mono-text">NOMINAL VALUE</span>
+                <span class="box-val" id="nodeNominal">Ø 120.000 mm</span>
+              </div>
+              <div class="telemetry-box">
+                <span class="box-label mono-text">MEASURED VALUE</span>
+                <span class="box-val lime-text" id="nodeMeasured">Ø 120.001 mm</span>
+              </div>
+              <div class="telemetry-box">
+                <span class="box-label mono-text">DEVIATION</span>
+                <span class="box-val" id="nodeDeviation">+0.001 mm</span>
+              </div>
+              <div class="telemetry-box">
+                <span class="box-label mono-text">QA RESULT</span>
+                <span class="box-val pass-tag" id="nodeResult">PASSED (AS9100)</span>
+              </div>
+            </div>
+
+            <div class="cmm-wave-graph mono-text">
+              <div class="graph-header">
+                <span>INTERFEROMETRIC TRACE</span>
+                <span class="lime-text">RES: 0.1nm</span>
+              </div>
+              <div class="wave-simulation-bars">
+                <span class="w-bar" style="height: 60%;"></span>
+                <span class="w-bar" style="height: 75%;"></span>
+                <span class="w-bar" style="height: 68%;"></span>
+                <span class="w-bar" style="height: 82%;"></span>
+                <span class="w-bar" style="height: 90%;"></span>
+                <span class="w-bar" style="height: 72%;"></span>
+                <span class="w-bar" style="height: 85%;"></span>
+                <span class="w-bar" style="height: 78%;"></span>
+                <span class="w-bar" style="height: 95%;"></span>
+                <span class="w-bar" style="height: 88%;"></span>
+                <span class="w-bar" style="height: 80%;"></span>
+                <span class="w-bar" style="height: 92%;"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="telemetry-panel-footer mono-text">
+            <span>CALIBRATION: NIST TRACEABLE</span>
+            <span>NEXT PROBE CYCLE: 120S</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: INDUSTRIES SERVED — ASYMMETRIC BENTO GRID MOSAIC
+       ========================================================================== -->
+  <section id="industries" class="industries-section-unique">
+    <div class="section-container">
+      
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 04. MISSION-CRITICAL INDUSTRIES</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            Engineered for Extremes. <span class="text-lime-gradient">Proven Worldwide.</span>
+          </h2>
+          <p class="section-lead">
+            Forgex manufactures flight-certified, energy-critical, and road-ready components for international tier-1 OEMs across the globe.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bento-style Asymmetric Industries Grid -->
+      <div class="industries-bento-grid">
+        
+        <!-- CARD 1: Aerospace & Defense (Large Featured) -->
+        <article class="bento-card bento-large reveal-on-scroll" data-delay="100">
+          <img 
+            src="assets/images/precision_component_hero.jpg" 
+            alt="Aerospace machined rotor component" 
+            class="bento-bg-img"
+          />
+          <div class="bento-gradient-veil"></div>
+          <div class="bento-content">
+            <div class="bento-tag mono-text">
+              <i data-lucide="plane"></i>
+              <span>AEROSPACE &amp; DEFENSE</span>
+            </div>
+            <h3 class="bento-title">Flight-Critical Propulsion &amp; Airframe Structures</h3>
+            <p class="bento-desc">
+              AS9100D certified manufacturing of rotor hubs, turbine disc carriers, and lightweight structural wing spars machined from aerospace titanium and nickel alloys.
+            </p>
+            <div class="bento-stats-row mono-text">
+              <span>TOLERANCE: ±0.005 MM</span>
+              <span>100% ULTRASONIC NDT</span>
+            </div>
+          </div>
+          <div class="bento-hover-arrow">
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </article>
+
+        <!-- CARD 2: Electric Mobility & Automotive -->
+        <article class="bento-card bento-medium reveal-on-scroll" data-delay="200">
+          <img 
+            src="assets/images/ind_automotive.jpg" 
+            alt="Electric vehicle automated assembly" 
+            class="bento-bg-img"
+          />
+          <div class="bento-gradient-veil"></div>
+          <div class="bento-content">
+            <div class="bento-tag mono-text">
+              <i data-lucide="car"></i>
+              <span>ELECTRIC MOBILITY</span>
+            </div>
+            <h3 class="bento-title">Next-Gen EV Rotor Shafts &amp; Battery Trays</h3>
+            <p class="bento-desc">
+              High-volume robotic production cells outputting 10,000+ precision electric drivetrain shafts monthly.
+            </p>
+            <div class="bento-stats-row mono-text">
+              <span>OEE: 98.6%</span>
+              <span>IATF 16949 COMPLIANT</span>
+            </div>
+          </div>
+          <div class="bento-hover-arrow">
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </article>
+
+        <!-- CARD 3: Energy & Offshore Exploration -->
+        <article class="bento-card bento-medium reveal-on-scroll" data-delay="300">
+          <img 
+            src="assets/images/ind_oilgas.jpg" 
+            alt="Offshore oil, gas and wind subsea equipment" 
+            class="bento-bg-img"
+          />
+          <div class="bento-gradient-veil"></div>
+          <div class="bento-content">
+            <div class="bento-tag mono-text">
+              <i data-lucide="zap"></i>
+              <span>ENERGY &amp; OFFSHORE</span>
+            </div>
+            <h3 class="bento-title">Subsea Wellhead Valves &amp; Wind Turbines</h3>
+            <p class="bento-desc">
+              Forged corrosion-resistant super duplex stainless steel assemblies engineered for 2,000-meter deepsea hydrostatic pressures.
+            </p>
+            <div class="bento-stats-row mono-text">
+              <span>PRESSURE: 15,000 PSI</span>
+              <span>NACE MR0175 CERT</span>
+            </div>
+          </div>
+          <div class="bento-hover-arrow">
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </article>
+
+        <!-- CARD 4: Semiconductor & Chemical Processing -->
+        <article class="bento-card bento-small reveal-on-scroll" data-delay="400">
+          <img 
+            src="assets/images/ind_chemical.jpg" 
+            alt="Chemical precision reactor components" 
+            class="bento-bg-img"
+          />
+          <div class="bento-gradient-veil"></div>
+          <div class="bento-content">
+            <div class="bento-tag mono-text">
+              <i data-lucide="flask-conical"></i>
+              <span>CHEMICAL &amp; SEMICON</span>
+            </div>
+            <h3 class="bento-title">Ultra-High Purity Gas Delivery Blocks</h3>
+            <p class="bento-desc">
+              Electropolished internal passages with mirror finishes down to Ra 0.05μm for cleanroom vacuum manifolds.
+            </p>
+          </div>
+          <div class="bento-hover-arrow">
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </article>
+
+        <!-- CARD 5: Sanitary Bio-Pharma & Food Tech -->
+        <article class="bento-card bento-small reveal-on-scroll" data-delay="500">
+          <img 
+            src="assets/images/ind_pharma.jpg" 
+            alt="Sanitary stainless steel pharmaceutical vessels" 
+            class="bento-bg-img"
+          />
+          <div class="bento-gradient-veil"></div>
+          <div class="bento-content">
+            <div class="bento-tag mono-text">
+              <i data-lucide="shield-check"></i>
+              <span>BIOPHARMA &amp; SANITARY</span>
+            </div>
+            <h3 class="bento-title">Aseptic 316L Pharmaceutical Vessels</h3>
+            <p class="bento-desc">
+              Crevice-free orbital welded piping and autoclaved sanitary valve clusters meeting strict FDA &amp; ASME BPE standards.
+            </p>
+          </div>
+          <div class="bento-hover-arrow">
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: SUSTAINABILITY & CIRCULAR METALLURGY
+       ========================================================================== -->
+  <section id="sustainability" class="sustainability-section-unique">
+    <div class="section-container">
+      
+      <div class="sustainability-box-glass reveal-on-scroll">
+        <div class="sus-grid">
+          
+          <!-- Left: Narrative & Real-time Metrics -->
+          <div class="sus-narrative">
+            <div class="header-tag-pill mono-text">
+              <span class="pill-dot"></span>
+              <span>// 05. CIRCULAR METALLURGY</span>
+            </div>
+            <h2 class="section-headline">
+              Forging a Net-Zero <span class="text-lime-gradient">Industrial Future.</span>
+            </h2>
+            <p class="sus-body">
+              True engineering excellence requires ecological responsibility. Forgex operates 100% closed-loop chip reclamation systems, bio-based closed lubrication cycles, and on-site solar microgrids powering our induction melting cells.
+            </p>
+
+            <div class="sus-stats-cluster">
+              <div class="sus-stat-badge">
+                <span class="sus-stat-num mono-text">100%</span>
+                <span class="sus-stat-lbl">Recycled Aluminum &amp; Steel Scrap Reclaimed</span>
+              </div>
+              <div class="sus-stat-badge">
+                <span class="sus-stat-num mono-text">-45%</span>
+                <span class="sus-stat-lbl">Carbon Emissions Intensity vs Industry Standard</span>
+              </div>
+              <div class="sus-stat-badge">
+                <span class="sus-stat-num mono-text">12.8 MW</span>
+                <span class="sus-stat-lbl">Rooftop Photovoltaic Microgrid Generating Clean Power</span>
+              </div>
+              <div class="sus-stat-badge">
+                <span class="sus-stat-num mono-text">ZERO</span>
+                <span class="sus-stat-lbl">Hazardous Landfill Waste Through Closed Distillation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Visual with High-Tech Overlay -->
+          <div class="sus-visual-side">
+            <div class="sus-img-container">
+              <img 
+                src="assets/images/coils_strips.jpg" 
+                alt="High-grade recyclable steel coils" 
+                class="sus-img"
+              />
+              <div class="sus-overlay-card mono-text">
+                <div class="sus-card-header">
+                  <i data-lucide="leaf" class="lime-text"></i>
+                  <span>ECO-METRIC REPORT // ACTIVE</span>
+                </div>
+                <div class="sus-card-row">
+                  <span>ANNUAL CO2 AVOIDED:</span>
+                  <span class="lime-text">14,280 METRIC TONS</span>
+                </div>
+                <div class="sus-card-row">
+                  <span>WATER RECIRCULATION:</span>
+                  <span>99.4% CLOSED LOOP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: GLOBAL FOOTPRINT — WORLDWIDE MANUFACTURING HUBS
+       ========================================================================== -->
+  <section class="global-footprint-section">
+    <div class="section-container">
+      
+      <div class="section-header-row reveal-on-scroll">
+        <div class="header-tag-pill mono-text">
+          <span class="pill-dot"></span>
+          <span>// 06. GLOBAL PRESENCE</span>
+        </div>
+        <div class="header-split-text">
+          <h2 class="section-headline">
+            Strategically Positioned to <span class="text-lime-gradient">Serve Global OEMs.</span>
+          </h2>
+          <p class="section-lead">
+            With 4 advanced production hubs and rapid JIT logistics corridors spanning North America, Europe, and Asia-Pacific.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hubs Cards Grid -->
+      <div class="hubs-grid reveal-on-scroll" data-delay="150">
+        
+        <div class="hub-card" tabindex="0">
+          <div class="hub-header">
+            <span class="hub-city">MUNICH</span>
+            <span class="hub-country mono-text">GERMANY (HQ)</span>
+          </div>
+          <div class="hub-focus mono-text">R&amp;D // 5-AXIS CNC HUB</div>
+          <p class="hub-desc">Central engineering headquarters, cryogenic stabilization labs, and aerospace turbine workcells.</p>
+          <div class="hub-footer mono-text">
+            <span>AREA: 48,000 M²</span>
+            <span class="status-dot-lime"></span>
+          </div>
+        </div>
+
+        <div class="hub-card" tabindex="0">
+          <div class="hub-header">
+            <span class="hub-city">DETROIT</span>
+            <span class="hub-country mono-text">UNITED STATES</span>
+          </div>
+          <div class="hub-focus mono-text">AUTOMOTIVE // EV CELLS</div>
+          <p class="hub-desc">High-throughput robotic assembly lines delivering electric vehicle rotor shafts and chassis nodes.</p>
+          <div class="hub-footer mono-text">
+            <span>AREA: 65,000 M²</span>
+            <span class="status-dot-lime"></span>
+          </div>
+        </div>
+
+        <div class="hub-card" tabindex="0">
+          <div class="hub-header">
+            <span class="hub-city">TOKYO</span>
+            <span class="hub-country mono-text">JAPAN</span>
+          </div>
+          <div class="hub-focus mono-text">METROLOGY // CLEANROOM</div>
+          <p class="hub-desc">Ultra-precision coordinate measurement center and semiconductor high-purity fluidic manifold fabrication.</p>
+          <div class="hub-footer mono-text">
+            <span>AREA: 32,000 M²</span>
+            <span class="status-dot-lime"></span>
+          </div>
+        </div>
+
+        <div class="hub-card" tabindex="0">
+          <div class="hub-header">
+            <span class="hub-city">SINGAPORE</span>
+            <span class="hub-country mono-text">SINGAPORE</span>
+          </div>
+          <div class="hub-focus mono-text">APAC LOGISTICS // OFFSHORE</div>
+          <p class="hub-desc">Subsea oil &amp; gas valve manufacturing and cross-continental freight distribution gateway.</p>
+          <div class="hub-footer mono-text">
+            <span>AREA: 28,000 M²</span>
+            <span class="status-dot-lime"></span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: ULTRA-PREMIUM INDUSTRIAL CTA & CONTACT
+       ========================================================================== -->
+  <section id="contact" class="engineering-cta-section">
+    <div class="cta-backdrop-image" style="background-image: url('assets/images/footer_cta_bg.jpg');"></div>
+    <div class="cta-scrim-overlay"></div>
+    
+    <div class="section-container relative-z">
+      <div class="cta-content-box reveal-on-scroll">
+        <div class="header-tag-pill mono-text mb-4">
+          <span class="pill-dot"></span>
+          <span>// READY TO ENGINEER WHAT'S NEXT?</span>
+        </div>
+        <h2 class="cta-main-title">
+          Bring Your Most Demanding Specifications to <span class="text-lime-gradient">FORGEX.</span>
+        </h2>
+        <p class="cta-subtitle">
+          Our senior metallurgical engineers and CNC toolpath specialists are ready to review your CAD models, tolerance limits, and volume requirements. Fast-track quoting within 24 hours under complete NDA protection.
+        </p>
+
+        <div class="cta-button-cluster">
+          <button type="button" class="btn-quote btn-quote-large" onclick="document.getElementById('openQuoteModalBtn').click();">
+            <span>Initiate Rapid Quote Request</span>
+            <div class="btn-arrow-circle">
+              <i data-lucide="arrow-right"></i>
+            </div>
+          </button>
+          <a href="mailto:engineering@forgex-manufacturing.com" class="btn-direct-contact mono-text">
+            <i data-lucide="mail"></i>
+            <span>ENGINEERING@FORGEX-MFG.COM</span>
+          </a>
+        </div>
+
+        <div class="cta-trust-badges mono-text">
+          <span><i data-lucide="lock"></i> 100% NDA CONFIDENTIAL</span>
+          <span><i data-lucide="clock"></i> 24-HOUR FEASIBILITY ANALYSIS</span>
+          <span><i data-lucide="file-check"></i> STEP, IGES, DXF, PARASOLID READY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MAIN FOOTER
+       ========================================================================== -->
+  <footer class="forgex-footer">
+    <div class="section-container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Column -->
+        <div class="footer-col-brand">
+          <div class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                <rect width="36" height="36" rx="8" fill="#202827" />
+                <path d="M10 10H26V14H15V17H24V21H15V26H10V10Z" fill="#FFFFFF" />
+                <polygon points="21,21 26,21 26,26 21,26" fill="#C5E86C" />
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-title text-white">FORGEX</span>
+              <span class="logo-tagline text-steel">ENGINEERING BEYOND LIMITS.</span>
+            </div>
+          </div>
+          <p class="footer-brand-p">
+            Pioneering advanced industrial manufacturing, automated robotic assembly cells, and micron-level precision metallurgy for global aerospace, defense, and e-mobility leaders.
+          </p>
+          <div class="footer-cert-badges mono-text">
+            <span>ISO 9001:2015</span>
+            <span>AS9100D</span>
+            <span>IATF 16949</span>
+            <span>ISO 14001</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">NAVIGATION</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="about.html">About FORGEX</a></li>
+            <li><a href="capabilities.html">Advanced Capabilities</a></li>
+            <li><a href="industries.html">Industries Served</a></li>
+            <li><a href="sustainability.html">Circular Metallurgy</a></li>
+            <li><a href="contact.html">Contact Engineering</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Capabilities -->
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">CAPABILITIES</h4>
+          <ul class="footer-links">
+            <li><a href="#capabilities">5-Axis CNC Milling</a></li>
+            <li><a href="#capabilities">Fiber Laser Profiling</a></li>
+            <li><a href="#capabilities">Robotic Synchronous Welding</a></li>
+            <li><a href="#capabilities">Precision Tube Hydroforming</a></li>
+            <li><a href="#capabilities">Cryogenic Stress Relief</a></li>
+            <li><a href="#capabilities">CMM Coordinate Metrology</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global HQ -->
+        <div class="footer-col">
+          <h4 class="footer-col-title mono-text">HEADQUARTERS</h4>
+          <address class="footer-address mono-text">
+            FORGEX INDUSTRIAL HOLDINGS AG<br>
+            Technologiepark 18<br>
+            80339 Munich, Germany<br><br>
+            TEL: +49 (0) 89 2441 8000<br>
+            FAX: +49 (0) 89 2441 8099<br>
+            EMAIL: info@forgex-manufacturing.com
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar mono-text">
+        <div class="bottom-left">
+          <span>&copy; 2026 FORGEX INDUSTRIAL HOLDINGS AG. ALL RIGHTS RESERVED.</span>
+        </div>
+        <div class="bottom-right">
+          <a href="#">Privacy Protocol</a>
+          <span>/</span>
+          <a href="#">Terms of Supply</a>
+          <span>/</span>
+          <a href="#">Security &amp; NDA</a>
+          <span>/</span>
+          <span class="live-status-pill"><i class="dot-green"></i> SYSTEM STATUS: 100% OPERATIONAL</span>
+        </div>
+      </div>
+      <div class="footer-credit-bar">
+        <span>FORGEX | Made with <span class="credit-heart">&hearts;</span> by FORGEX</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODALS ================= -->
+
+  <!-- 1. Request a Quote Interactive Modal -->
+  <div class="modal-backdrop" id="quoteModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-tag mono-text">// RAPID SPECIFICATION FORM</span>
+          <h3 id="modalTitle">Request an Engineering Quote</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="closeQuoteModalBtn" aria-label="Close modal">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <form class="quote-form" id="quoteForm" onsubmit="event.preventDefault(); submitQuoteForm();">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="clientName">Full Name</label>
+            <input type="text" id="clientName" placeholder="Dr. Alexander Vance" required>
+          </div>
+          <div class="form-group">
+            <label for="clientCompany">Company / Organization</label>
+            <input type="text" id="clientCompany" placeholder="Apex Aerospace Systems" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="clientEmail">Corporate Email</label>
+            <input type="email" id="clientEmail" placeholder="a.vance@apex-aero.com" required>
+          </div>
+          <div class="form-group">
+            <label for="projectType">Application / Sector</label>
+            <select id="projectType">
+              <option value="aerospace">Aerospace Grade Precision Machining</option>
+              <option value="automotive">Automotive Assembly &amp; Robotic Tooling</option>
+              <option value="energy">Renewable Energy Infrastructure</option>
+              <option value="robotics">Precision Robotics &amp; Actuators</option>
+              <option value="other">Custom Industrial Prototype</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="toleranceReq">Required Tolerance &amp; Material</label>
+          <input type="text" id="toleranceReq" placeholder="±0.01 mm / Aerospace Grade 7075 Aluminum">
+        </div>
+        <div class="form-group">
+          <label for="projectDetails">Project Scope &amp; Monthly Target Volume</label>
+          <textarea id="projectDetails" rows="3" placeholder="Describe component specs, expected units (e.g., 5,000 units/mo), and delivery timelines..."></textarea>
+        </div>
+        <div class="modal-actions">
+          <button type="submit" class="btn-submit-quote">
+            <span>Submit Specification</span>
+            <i data-lucide="send"></i>
+          </button>
+          <span class="mono-text confidentiality-note"><i data-lucide="lock"></i> NDA Protected // 24hr Engineering Response</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Interactive Video / Virtual Tour Modal -->
+  <div class="modal-backdrop" id="tourModal" aria-hidden="true" role="dialog" aria-labelledby="tourTitle">
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-tag mono-text">// IMMERSIVE 360° FACILITY TOUR</span>
+          <h3 id="tourTitle">Forgex Automated Facility — Cell-A7</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="closeTourModalBtn" aria-label="Close modal">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="tour-player-frame">
+        <div class="tour-screen-simulation">
+          <img src="assets/images/hero_factory.jpg" alt="Live factory camera feed" class="tour-screen-image">
+          <div class="tour-screen-scanline" aria-hidden="true"></div>
+          <div class="tour-live-tag mono-text">
+            <span class="live-blink"></span> LIVE FEED CAM #04 // SMART CELL A
+          </div>
+          <div class="tour-telemetry-overlay mono-text">
+            <div>ROBOT 01: WELDING BEAM ACTIVE</div>
+            <div>TORQUE: 42.4 NM // TEMP: 24.2°C</div>
+            <div>STATUS: NOMINAL OPERATION</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
